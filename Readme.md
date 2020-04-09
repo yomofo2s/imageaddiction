@@ -1,7 +1,9 @@
 test-repo
 =======
 
-demo
+ImageAddiction website is a website under regorous development. 
 
-Practise for exam
+Ensure that any error or is not permanent as we are constantly improving the phase of our website.
 
+contact us 
+imageaddictionictservices@gmail.com
