@@ -1,9 +1,9 @@
-test-repo
+== ImageAddiction-repo
 =======
 
-ImageAddiction website is a website under regorous development. 
+Welcome to ImageAddiction world we are working tirelessly to keep this website to your taste, under regorous development and scrutinity. 
 
-Ensure that any error or is not permanent as we are constantly improving the phase of our website.
+Ensure that any error or is not permanent but we are  improving the phase of our website.
 
-contact us 
+=== contact us 
 imageaddictionictservices@gmail.com
