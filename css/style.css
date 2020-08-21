@@ -1398,3 +1398,10 @@ h1, h2, h3, h4, h5,
   padding: 20px;
   background: #fff;
   margin-bottom: 30px; }
+
+  html, body {
+    overflow-x: hidden;
+  }
+  body {
+    position: relative
+  }
