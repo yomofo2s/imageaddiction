@@ -1,0 +1,205 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Tech Tutorial</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<body>
+
+		<!-- Header -->
+			<header id="header">
+				<div class="logo"><a href="Blog.html">How to <span>by Yacksman</span></a></div>
+				<a href="Blog.html"><span>Blog</span></a>
+			</header>
+
+		<!-- Nav -->
+			<nav id="menu">
+				<ul class="links">
+					<li><a href="index.html">Home</a></li>
+					<li><a href="technology.html">Technology</a></li>
+                    <li><a href="Recharge.html">Recharge</a></li>
+                    <li><a href="about.html">about</a></li>
+                    <li><a href="Blog.html">Blog</a></li>
+				</ul>
+			</nav>
+
+		<!-- Banner -->
+		<!--
+			Note: To show a background image, set the "data-bg" attribute below
+			to the full filename of your image. This is used in each section to set
+			the background image.
+		-->
+			<section id="banner" class="bg-img" data-bg="images/git.png">
+				<div class="inner">
+					<header>
+						<h1> <b>How to use Git to implement a new feature/change without affecting master branch</b></h1>
+					</header>
+				</div>
+				<a href="Blog.html" class="https://github.com/yomofo2s">Learn More about the Author</a>
+			</section>
+
+		<!-- One -->
+			<section id="one" class="wrapper post bg-img" data-bg="banner2.jpg">
+				<div class="inner">
+					<article class="box">
+						<header>
+							<h2>What is a Git Branch?</h2>
+							<p>05.10.2020</p>
+                        </header>
+                        
+						<div class="content">
+							<p>A Git branch is the fundamental means of launching a separate line of development withing a software project. It allows development to continue in multiple directions simultaneously and potentially, to produce different versions of the project. 
+                                The default branch in a repository is named master and most developers keep the repository’s most robust and dependable line of development on that branch.
+                                </p>
+						</div>
+						<footer>
+							<a href="generic.html" class="button alt"></a>
+						</footer>
+					</article>
+				</div>
+			</section>
+            <section>
+                <a href="#">
+                    <img src="images/git.png" alt="GitBranch"
+                     class="img-fluid">
+                  </a>
+            </section>
+		<!-- Two -->
+			<section id="two" class="wrapper post bg-img" data-bg="banner5.jpg">
+				<div class="inner">
+					<article class="box">
+						<header>
+							<h2>When should you use a branch?</h2>
+						</header>
+						<div class="content">
+							<p> A Branch is suitable for continuing development. It is dynamic and moves with each commit you make. 
+                               <ul> <li>A branch can be used to represents an individual customer release. If you want to start version 1.1 of your project 
+                                   but you know that some of your customers want to stick with version 1.0, then keep the old version alive as a separate branch</li>
+                                <li> A branch can encapsulate a development phase, such as the prototype, beta, stable or bleeding-edge release.</li> 
+                               <li> You can use branch to isolate the development of a single feature or research into a particularly complex bug. 
+                                   For example, you can introduce a branch for a well-defined and conceptually isolated task or to facilitate a merge of several branches prior to a release </li>
+                                </ul>
+                            </p>
+						</div>
+						<footer>
+							<section>
+                                <a href="#">
+                                    <img src="images/git/1.JPG" alt="New-feuture"
+                                     class="img-fluid">
+                                  </a>
+                            </section>
+						</footer>
+					</article>
+				</div>
+				<section>
+                    <a href="#">
+                        <img src="images/git/2.JPG" alt="GitBranch"
+                         class="img-fluid">
+                      </a>
+                </section>
+			</section>
+
+		<!-- Three -->
+			<section id="three" class="wrapper post bg-img" data-bg="banner4.jpg">
+				<div class="inner">
+					<article class="box">
+						<header>
+							<h2>How should you name your branches?</h2>
+						</header>
+						<div class="content">
+							<p>Naming your branches is ultimately up to you and your project policies. 
+                                I say it is essentially arbitrary, though there are some limitations.
+                                However, you should consider the key differentiating characteristic: 
+                                will the naming convention be static and immutable, or will the naming 
+                                convention be dynamic for development?</p>
+						</div>
+						<footer>
+							<section>
+                                <a href="#">
+                                    <img src="images/git/3.JPG" alt="GitBranch"
+                                     class="img-fluid">
+                                  </a>
+                            </section>
+						</footer>
+					</article>
+				</div>
+				<section>
+                    <a href="#">
+                        <img src="images/git/Git_branch.png" alt="GitBranch"
+                         class="img-fluid">
+                      </a>
+                </section>
+			</section>
+
+		<!-- Four -->
+			<section id="four" class="wrapper post bg-img" data-bg="banner3.jpg">
+				<div class="inner">
+					<article class="box">
+						<header>
+							<h2>Few tips to keep in mind</h2>
+						</header>
+						<div class="content">
+                            <ul> <li>As shown above image, it is best to create new branch before you develop a new feature </li> 
+                            <li> Merging directly to the master branch should be restricted.</li>
+                             <li> Merging to local master branch should be synced only from upstream to local.</li> 
+                            <li> Pushing to origin master branch should be sync only, from local to origin.</li> 
+                            <li> Keep rebasing(making sure you sync between upstream master branch onto your branch) master branch onto feature branch periodically </li>
+                             </ul>
+						</div>
+						<footer>
+							<a href="Blog.html" class="button alt">Learn More</a>
+						</footer>
+					</article>
+				</div>
+			</section>
+
+		<!-- Footer -->
+			<footer id="footer">
+				<div class="inner">
+
+					<h2>Contact the Blogger</h2>
+
+					<form action="" method="post">
+
+						<div class="field half first">
+							<label for="name">Name</label>
+							<input name="name" id="name" type="text" placeholder="Name">
+						</div>
+						<div class="field half">
+							<label for="email">Email</label>
+							<input name="email" id="email" type="email" placeholder="Email">
+						</div>
+						<div class="field">
+							<label for="message">Message</label>
+							<textarea name="message" id="message" rows="7" placeholder="Message"></textarea>
+						</div>
+						<ul class="actions">
+							<li><input value="Send Message" class="button alt" type="submit"></li>
+						</ul>
+					</form>
+
+					<ul class="icons">
+						<li><a href="https://twitter.com/YacubAjibola" class="icon round fa-twitter"><span class="label">Twitter</span></a></li>
+						<li><a href="https://github.com/yomofo2s" class="icon round fa-github"><span class="label">Github</span></a></li>
+						<li><a href="https://www.linkedin.com/in/yaqub-omofoyewa-0519b660/" class="icon round fa-linkedin"><span class="label">Linkedin</span></a></li>
+					</ul>
+
+					<div class="copyright">
+						&copy; Designed by: <a href="https://iaenterprise.com">ImageAddiction</a>. Images: <a href="https://iaenterprise.com">ImageAddiction Technology</a>.
+					</div>
+
+				</div>
+			</footer>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
