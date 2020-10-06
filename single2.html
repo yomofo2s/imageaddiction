@@ -48,13 +48,14 @@
                 <ul class="site-menu main-menu js-clone-nav ml-auto d-none d-lg-block">
                   <li><a href="index.html" class="nav-link">Home</a></li>
                   <li><a href="technology.html" class="nav-link">Technology</a></li>
-                  <li><a href="careers.html" class="nav-link">Careers</a></li>
+                  <li><a href="contact.html" class="nav-link">Contact</a></li>
+                  <li><a href="Blog.html" class="nav-link">Blog</a></li>
                 </ul>
               </nav>
             </div>
             <div class="col-lg-4 text-center">
               <div class="site-logo">
-                <a href="index.html">ImageAddiction</a>
+                <a href="index.html">How to use Git to implement a new feature/change without affecting master branch</a>
               </div>
 
 
@@ -66,6 +67,7 @@
                   <li><a href="about.html" class="nav-link">About</a></li>
                   <li class="active"><a href="Recharge.html" class="nav-link">Recharge</a></li>
                   <li><a href="contact.html" class="nav-link">Contact</a></li>
+                  <li><a href="blog.html" class="nav-link">Blog</a></li>
                 </ul>
               </nav>
             </div>
@@ -94,53 +96,81 @@
       <div class="container">
         <div class="row">
           <div class="col-md-8 blog-content">
-            <p class="lead">How to Register and Download SmileVoice</p>
-            <h3><p>Why SmileVoice?</p></h3>
+            <p class="lead">How to use Git to implement a new feature/change without affecting master branch</p>
+            <h3><p>What is a Git Branch?</p></h3>
 
-            <blockquote><p>I cannot mention the amount of people that contacted me about SmileVoice. Why SmileVoice?</p></blockquote>
+            <blockquote><p>A Git branch is the fundamental means of launching a separate line of development withing a software project. It allows development to continue in multiple directions simultaneously and potentially, to produce different versions of the project. 
+              The default branch in a repository is named master and most developers keep the repository’s most robust and dependable line of development on that branch</p></blockquote>
 
-           <p>What Technology is behind SmileVoice? </p> 
+           <p>When should you use a branch? </p> 
             <blockquote><p> The Technology behind SmileVoice is based on Voice over IP, also call IP Telephony. Simply a method and group of technologies
               for the delivery of voice communications and multimedia sessions over Internet Protocol networks such as Internet. </blockquote></p>
 
             <p>Lifespan of this technology?</p>
-            <blockquote><p>This Technology is one of the latest innovation from Smile Communications, making voice experience cheap and reliable. Come to think of it. This technology has come to stay as long as there is Wi-fi.Then there will always be SmileVoice</p></blockquote>
+            <blockquote><p> A Branch is suitable for continuing development. It is dynamic and moves with each commit you make. 
+              <ul> <li>A branch can be used to represents an individual customer release. If you want to start version 1.1 of your project 
+                  but you know that some of your customers want to stick with version 1.0, then keep the old version alive as a separate branch</li>
+               <li> A branch can encapsulate a development phase, such as the prototype, beta, stable or bleeding-edge release.</li> 
+              <li> You can use branch to isolate the development of a single feature or research into a particularly complex bug. 
+                  For example, you can introduce a branch for a well-defined and conceptually isolated task or to facilitate a merge of several branches prior to a release </li>
+               </ul>
+           </blockquote></p>
+           <section>
+            <a href="#">
+                <img src="images/git.png" alt="GitBranch"
+                 class="img-fluid">
+              </a>
+        </section>
+        <section>
+          <a href="#">
+              <img src="images/git/1-2.png" alt="New-feuture"
+               class="img-fluid">
+            </a>
+      </section>
+            <p>How should you name your branches?</p>
+             <strong><p>Naming your branches is ultimately up to you and your project policies. 
+              I say it is essentially arbitrary, though there are some limitations.
+              However, you should consider the key differentiating characteristic: 
+              will the naming convention be static and immutable, or will the naming 
+              convention be dynamic for development?</p> </strong> 
+            <p>To see a top Git commands <a href="https://intellipaat.com/blog/tutorial/devops-tutorial/git-commands/" class="nav-link">click here</a> Essential git-commands for beginners.</p>
+            <p>To find out more about git command <a href="https://about.gitlab.com/images/press/git-cheat-sheet.pdf" class=nav-link>here</a>for Git Cheat git-cheat-sheet</p>
+           <bold><p>Other things to keep in mind</p> </bold> 
+            <p><ul> <li>As shown above image, it is best to create new branch before you develop a new feature </li> 
+              <li> Merging directly to the master branch should be restricted.</li>
+               <li> Merging to local master branch should be synced only from upstream to local.</li> 
+              <li> Pushing to origin master branch should be sync only, from local to origin.</li> 
+              <li> Keep rebasing(making sure you sync between upstream master branch onto your branch) master branch onto feature branch periodically </li>
+               </ul></p>
+            <img src="images/git/2-2.png" alt="GitBranch"
 
-            <blockquote><p>You can also make voice calls, video calls and conference calls, and send SMS messages to your friends and family when you’re connected to any other data network. SmileVoice is the lowest call rate in Nigeria today!</blockquote></p>
-
-            <p>How to Download and SmileVoice</p>
-             <strong><p>Step 1 - Download the App from your AppStore</p> </strong> 
-            <p>For android users click <a href="https://play.google.com/store/apps/details?id=com.smile.android.app&hl=en" class="nav-link">here</a>  to download SmileVoice on GooglePlay store.</p>
-            <p>For iPhone users click <a href="https://apps.apple.com/us/app/smilevoice/id1038360615" class=nav-link>here</a>to download your SmileVoice on Apple Store</p>
-           <bold><p>Step 2</p> </bold> 
-            <p>After the download, you will see the image shown below. Enter the number provided by your Smile Representative and click on "GET AN ACTIVATION CODE"</p>
-            <img src="images/smilevoice/step1.jpg" alt="SmileVoice"
-
-            bold><p>Step 3</p> </bold> 
-            <p>This new page will be redirected, where you will enter your registered Smile Number or an email<blockquote>(Note this email is different from your personal email, so ask your smile Representative for your registered email). Then click on Submit.</blockquote></p> 
+            bold><p>Contact the Blogger</p> </bold> 
+            <p>I can be reached anytime via my contact link.</blockquote></p> 
             <p>A code will be sent to the email that you provided, so copy/get the code and paste it into your SmileVoice App code box.</p>
-            <img src="images/smilevoice/step2.jpg" alt="SmileVoice"
+            <img src="images/git/3-2.png" alt="GitBranch"
+            
+            <footer>
+              <div>
+							<section>
+                                <a href="#">
+                                    <img src="images/git/3-2.png" alt="GitBranch"
+                                     class="img-fluid">
+                                  </a>
+                            </section>
+						</footer>
+        </div>
 
-            bold><p>Step 4</p> </bold> 
-            <p>Finally your app will show ready as shown below<blockquote>Then you can start calling any network across Nigeria.</blockquote></p> 
-            <p>You can recharge your phone number <a href="Recharge.html" </a> here.
-            <img src="images/smilevoice/step3.jpg" alt="SmileVoice"
-            <div> class="pt-5">
-              <p>Categories:  <a href="#">Technology</a>, <a href="#">Voice</a>  Tags: <a href="#">#smileVoice</a>, <a href="#">#Smile 4G</a></p>
-            </div>
-
-
-            <div class="pt-5">
-              <h3 class="mb-5">6 Comments</h3>
+              </div> class="pt-5">
+              <h3 class="mb-5">Comments</h3>
               <ul class="comment-list">
                 <li class="comment">
                   <div class="vcard bio">
                     <img src="images/yaqub.png" Free Website Template by Free-Template.co">
                   </div>
                   <div class="comment-body">
-                    <h3>Jacob Smith</h3>
-                    <div class="meta">January 9, 2020 at 2:21pm</div>
-                    <p>When she reached the first hills of the Italic Mountains, she had a last view back on the skyline of her hometown Bookmarksgrove, the headline of Alphabet Village and the subline of her own road, the Line Lane. Pityful a rethoric question ran over her cheek, then she continued her way.</p>
+                    <h3>Jacob Omofoyoyewa</h3>
+                    <div class="meta">October 6, 2020 at 2:21pm</div>
+                    <p>Git is a version control system that lets you manage and keep track of your source code history p</p>
                     <p><a href="#" class="reply">Reply</a></p>
                   </div>
                 </li>
