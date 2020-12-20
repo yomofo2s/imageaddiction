@@ -85,222 +85,232 @@
       </div>
     </div>
 
-  <article>
-    <div class="site-section">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-8 blog-content">
-            <blockquote><p class="lead">How to use Git to implement a new feature/change without affecting master branch</p></blockquote>
-            <br>
-            <p>A Git branch is the fundamental means of launching a separate line of development withing a software project. It allows development to continue in multiple directions simultaneously and potentially, to produce different versions of the project. 
-              The default branch in a repository is named master and most developers keep the repository’s most robust and dependable line of development on that branch</p>
-            </br>
-              <blockquote><p> What to know as a beginner? </p> </blockquote>
-            <p> The git branch model is highly suitable for your day-day versionining as a developer. </p>
-              <a href="#">
-                  <img src="" alt=""
-                   class="img-fluid">
-              </a>
-          
-        <blockquote><p>When should you use a branch? <code>$ git branch</code></p></blockquote>
-            <p> A Branch is suitable for continuing development. It is dynamic and moves with each commit you make. 
-              <ul> 
-                <li>A branch can be used to represents an individual customer release. If you want to start version 1.1 of your project 
-                  but you know that some of your customers want to stick with version 1.0, then keep the old version alive as a separate branch</li>
-               <li> A branch can encapsulate a development phase, such as the prototype, beta, stable or bleeding-edge release.</li> 
-              <li> You can use branch to isolate the development of a single feature or research into a particularly complex bug. 
-                  For example, you can introduce a branch for a well-defined and conceptually isolated task or to facilitate a merge of several branches prior to a release </li>
-              </ul>
-           </p>
-      <section>
-          <a href="#">
-              <img src="" alt=""
-               class="img-fluid">
-          </a>
-      </section>
-            <p>How should you name your branches?</p>
-            <code>$ git checkout -b new-feature</code>
-             <strong><p>Naming your branches is ultimately up to you and your project policies. 
-              I say it is essentially arbitrary, though there are some limitations.
-              However, you should consider the key differentiating characteristic: 
-              will the naming convention be static and immutable? or will the naming 
-              convention be dynamic for development?</p> </strong> 
-            <p>To see the top Git commands <a href="https://intellipaat.com/blog/tutorial/devops-tutorial/git-commands/" class="nav-link"> Essential git-commands for beginners </a> </p> 
-            <p>To find out more about git command <a href="https://about.gitlab.com/images/press/git-cheat-sheet.pdf" class=nav-link> for Git Cheat git-cheat-sheet </a></p>
-           
-            <footer>
-              <div>
-							<section><h6>
-                                <a href="showing workflow">
-                                    <img src="images/git/42.png" alt="GitBranch"
-                                     class="img-fluid">
-                                  </a>
-                            </section></h6>
-						</footer>
-        <div>
-          <a href="merging your branch to master">
-              <img src="images/git/52.png" alt="GitBranch" 
-               class="img-fluid">
-            </a>
-        </div> 
-          <blockquote><p> Things to keep in mind</p></blockquote> 
-            <p><ol> <li>With the few figures shown image, it is best to create new branch before you develop a new feature </li> 
-              <li> Merging directly to the master branch should be restricted.</li>
-               <li> Merging to local master branch should be synced only from upstream to local.</li> 
-              <li> Pushing to origin master branch should be sync only, from local to origin.</li> 
-              <li> Keep rebasing(making sure you sync between upstream master branch onto your branch) master branch onto feature branch periodically </li>
-               </ol></p>
+    <article>
+          <div class="site-section">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-8 blog-content">
+                  <blockquote><p class="lead">How to use Git to implement a new feature/change without affecting master branch</p></blockquote>
+                  <br>
+                  <p>A Git branch is the fundamental means of launching a separate line of development withing a software project. It allows development to continue in multiple directions simultaneously and potentially, to produce different versions of the project. 
+                    The default branch in a repository is named master and most developers keep the repository’s most robust and dependable line of development on that branch</p>
+                  </br>
+                    <blockquote><p> What to know as a beginner? </p> </blockquote>
+                  <p> The git branch model is highly suitable for your day-day versionining as a developer. </p>
+                    <a href="#">
+                        <img src="images/git/22.png" alt="Your github"
+                        class="img-fluid">
+                    </a>
+                </div>
               </div>
-    </article>
-      </section>
-              <h3 class="mb-5">Comments</h3>
-              <ul class="comment-list">
-                <li class="comment">
-                  <div class="vcard bio">
-                    <img src="images/yaqub.png">
-                  </div>
-                  <div class="comment-body">
-                    <h3>YacubAjibola </h3>
-                    <div class="meta">October 6, 2020 at 2:21pm</div>
-                    <p>Git is a version control system that lets you manage and keep track of your source code history</p>
-                    <p><a href="#" class="reply">Reply</a></p>
-                  </div>
-                </li>
-                                </div>
-                              </li>
-                            </ul>
-                        </li>
-                      </ul>
+              <blockquote><p>When should you use a branch? <code>$ git branch</code></p></blockquote>
+                  <p> A Branch is suitable for continuing development. It is dynamic and moves with each commit you make. 
+                    <ul> 
+                      <li>A branch can be used to represents an individual customer release. If you want to start version 1.1 of your project 
+                        but you know that some of your customers want to stick with version 1.0, then keep the old version alive as a separate branch</li>
+                    <li> A branch can encapsulate a development phase, such as the prototype, beta, stable or bleeding-edge release.</li> 
+                    <li> You can use branch to isolate the development of a single feature or research into a particularly complex bug. 
+                        For example, you can introduce a branch for a well-defined and conceptually isolated task or to facilitate a merge of several branches prior to a release </li>
+                    </ul>
+                </p>
+                <section>
+                  <a href="#">
+                      <img src="images/git/3-2.png" alt="default branch"
+                      class="img-fluid">
+                  </a>
+              </section>
+              <section>
+              <blockquote><p>How should you name your branches?</p></blockquote>
+              <code>$ git checkout -b new-feature</code>
+              <strong><p>Naming your branches is practically up to you and your project policies. 
+                I say it is essentially arbitrary, though there are some limitations.
+                However, you should consider the key differentiating characteristic: 
+                will the naming convention be static and immutable? or will the naming 
+                convention be dynamic for development? </p> </strong> 
+                <p>An example of new-feature is shown below in Figure 1</p>
+                <div>
+                  <section><h6>
+                  <a href="showing workflow">
+                      <img src="images/git/12.png" alt="creating a new git branch"
+                        class="img-fluid">
+                    </a>
+                  </section></h6>
+                </div>
+              </section>
+
+              <section>
+               <blockquote> <p>Merging your git branches?</p></blockquote>
+              <code>$ git merge -b new-feature</code>
+              <strong><p>Merging your depends whether you are ready to merge your project with the master branch. 
+                <em>remember the terms merging</em></p> </strong>
+                <div>
+                  <a href="merging your branch to master">
+                      <img src="images/git/12b.png" alt="GitBranch" 
+                      class="img-fluid">
+                    </a>
+                </div> 
+              </section>
+            </div>
+            <section>
+            <ol>
+              <div>
+             <blockquote> <p>Things to keep in mind</p></blockquote>
+                  <p><ol> <li>With the few figures shown image, it is best to create new branch before you develop a new feature </li> 
+                  <li> Merging directly to the master branch should be restricted.</li>
+                    <li> Merging to local master branch should be synced only from upstream to local.</li> 
+                  <li> Pushing to origin master branch should be sync only, from local to origin.</li> 
+                  <li> Keep rebasing (making sure you sync between upstream master branch onto your branch) master branch onto feature branch periodically </li>
+                    </ol></p>
+                    <p>To see the more Git commands <a href="https://intellipaat.com/blog/tutorial/devops-tutorial/git-commands/" class="nav-link"> Essential git-commands for beginners </a> </p> 
+                    <p>To find out more about git command <a href="https://about.gitlab.com/images/press/git-cheat-sheet.pdf" class=nav-link> for Git Cheat git-cheat-sheet </a></p>
+          </div>
+          </ol>
+        </section>
+        </div>   
+      </article>
+    
+    <footer       
+    
+      <h3 class="mb-5">Comments</h3>
+       <ul class="comment-list">
+         <li class="comment">
+           <div class="vcard bio">
+            <img src="images/yaqub.png">
+         </div>
+                <div class="comment-body">
+                  <h3>YacubAjibola </h3>
+                  <div class="meta">October 6, 2020 at 2:21pm</div>
+                  <p>Git is a version control system that lets you manage and keep track of your source code history</p>
+                  <p><a href="#" class="reply">Reply</a></p>
+                </div>
+              </li>  
+            </ul>
+              <section
+                <section>             
+                  <ul>
+                    <li class="comment">
+                      <div class="vcard bio">
+                        <img src="" alt="">
+                      </div>
+                      <div class="comment-body">
+                        <h3>Yaqub Omofoyoyewa</h3>
+                        <div class="meta">October 6, 2020 at 2:21pm</div>
+                        <p>Developer, programmer, system support, cloud enthusiast</p>
+                        <p><a href="mailto:yacube@gmail.com#" class="email">Contact</a></p>
+                      </div>
                     </li>
                   </ul>
-                </li>
+                      <!-- END comment-list -->
+                      
+                      <div class="comment-form-wrap pt-5">
+                        <h3 class="mb-5">Leave a comment</h3>
+                        <form action="#" class="">
+                          <div class="form-group">
+                            <label for="name">Name *</label>
+                            <input type="text" class="form-control" id="name">
+                          </div>
+                          <div class="form-group">
+                            <label for="email">Email *</label>
+                            <input type="email" class="form-control" id="email">
+                          </div>
+                          <div class="form-group">
+                            <label for="website">Website</label>
+                            <input type="url" class="form-control" id="website">
+                          </div>
 
-                <li class="comment">
-                  <div class="vcard bio">
-                    <img src="images/web_yaq.jpg" alt="yaqub">
-                  </div>
-                  <div class="comment-body">
-                    <h3>Yaqub Omofoyoyewa</h3>
-                    <div class="meta">October 6, 2020 at 2:21pm</div>
-                    <p>Developer, programmer, system support, cloud enthusiast</p>
-                    <p><a href="mailto:yacube@gmail.com#" class="email">Contact</a></p>
-                  </div>
-                </li>
-              </ul>
-              <!-- END comment-list -->
-              
-              <div class="comment-form-wrap pt-5">
-                <h3 class="mb-5">Leave a comment</h3>
-                <form action="#" class="">
-                  <div class="form-group">
-                    <label for="name">Name *</label>
-                    <input type="text" class="form-control" id="name">
-                  </div>
-                  <div class="form-group">
-                    <label for="email">Email *</label>
-                    <input type="email" class="form-control" id="email">
-                  </div>
-                  <div class="form-group">
-                    <label for="website">Website</label>
-                    <input type="url" class="form-control" id="website">
-                  </div>
+                          <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea name="" id="message" cols="30" rows="10" class="form-control"></textarea>
+                          </div>
+                          <div class="form-group">
+                            <input type="submit" value="Post Comment" class="btn btn-primary btn-md text-white">
+                          </div>
 
-                  <div class="form-group">
-                    <label for="message">Message</label>
-                    <textarea name="" id="message" cols="30" rows="10" class="form-control"></textarea>
-                  </div>
-                  <div class="form-group">
-                    <input type="submit" value="Post Comment" class="btn btn-primary btn-md text-white">
-                  </div>
+                        </form>
+                      </div>
+                    </div>
 
-                </form>
-              </div>
-            </div>
+                  </div>
+                  <div class="col-md-4 sidebar">
+                    <div class="sidebar-box">
+                      <form action="#" class="search-form">
+                        <div class="form-group">
+                          <span class="icon fa fa-search"></span>
+                          <input type="text" class="form-control" placeholder="Type a keyword and hit enter">
+                        </div>
+                      </form>
+                    </div>
+                    </div>
+                    
 
+                    <div class="sidebar-box">
+                      <h3 class="text-black">Copyright</h3>
+                      <p></p>
+                    </div>
+                  </div>
+                </section>  
+            </section>
           </div>
-          <div class="col-md-4 sidebar">
-            <div class="sidebar-box">
-              <form action="#" class="search-form">
-                <div class="form-group">
-                  <span class="icon fa fa-search"></span>
-                  <input type="text" class="form-control" placeholder="Type a keyword and hit enter">
-                </div>
-              </form>
-            </div>
-            </div>
-            
-
-            <div class="sidebar-box">
-              <h3 class="text-black">Copyright</h3>
-              <p></p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-
-    
-    <footer class="site-footer">
-    <div>
-      <div class="container">
-        <div class="row">
-          <div class="col-md-6">
-            <div class="row">
-              <div class="col-md-7">
-                <h2 class="footer-heading mb-4">About Us</h2>
-                <p>ImageAddiction is a registered company with the Corporate Affairs Commission. 
-                  We deals and offer varied services related to information and communication technology with Sales of Product and Services Nationwide. </p>
-              </div>
-              <div class="col-md-4 ml-auto">
-                <h2 class="footer-heading mb-4">Features</h2>
-                <ul class="list-unstyled">
-                  <li><a href="about.html">About Us</a></li>
-                  <li><a href="Blog.html">Testimonials</a></li>
-                  <li><a href="technology.html">Technology</a></li>
-                  <li><a href="Recharge.html">Recharge</a></li>
-                  <li><a href="contact.html">Contact Us</a></li>
-                </ul>
-              </div>
-          </div>
-          <div class="col-md-4 ml-auto">
-            <div class="mb-5">
-              <h2 class="footer-heading mb-4">Subscribe to Newsletter</h2>
-              <form action="#" method="post" class="footer-suscribe-form">
-                <div class="input-group mb-3">
-                  <input type="text" class="form-control border-secondary text-white bg-transparent" placeholder="Enter Email" aria-label="Enter Email" aria-describedby="button-addon2">
-                  <div class="input-group-append">
-                    <button class="btn btn-primary text-white" type="button" id="button-addon2">Subscribe</button>
-                  </div>
-                </div>
-            </div>
-            <ul>
-            <h2 class="footer-heading mb-4">Follow us</h2>
-            <li><a href="#about-section" class="smoothscroll pl-0 pr-3"><span class="icon-facebook"></span></a></li>
-            <li><iframe src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fwww.facebook.com%2FSmile4GImage%2F&width=450&layout=standard&action=like&size=small&share=true&height=35&appId" width="450" height="35" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe> </li>
-            <a href="https://twitter.com/YacubAjibola" class="pl-3 pr-3"><span class="icon-twitter"></span></a>
-            <a href="https://github.com/yomofo2s/" class="pl-3 pr-3"><span class="icon-github"></span></a>
-            <a href="https://www.linkedin.com/in/yaqub-omofoyewa-0519b660/" class="pl-3 pr-3"><span class="icon-linkedin"></span></a>
-            </ul>
-        </div>
-        </div>
-        <div class="row pt-5 mt-5 text-center">
-          <div class="col-md-12">
-            <div class="border-top pt-5">
-              <p>
-            <!-- Link back to ImageAddiction can't be removed. Website is licensed under CC BY 3.0. -->
-           <small> Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This Website is designed <i class="icon-heart text-danger" aria-hidden="true"></i> by <a href="www.iaenterprise.com" target="_blank" >ImageAddiction</a> </small>
-            <!-- Link back to ImageAddiction can't be removed. Website is licensed under CC BY 3.0. -->
-            </p>
-            </div>
-          </div>
-        </div>
-       </div>
-      </div>
-    </div>
     </footer>
 
-    </div>
+    
+   <footer class="site-footer">
+      <div>
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6">
+              <div class="row">
+                <div class="col-md-7">
+                  <h2 class="footer-heading mb-4">About Us</h2>
+                  <p>ImageAddiction is a registered company with the Corporate Affairs Commission. 
+                    We deals and offer varied services related to information and communication technology with Sales of Product and Services Nationwide. </p>
+                </div>
+                <div class="col-md-4 ml-auto">
+                  <h2 class="footer-heading mb-4">Features</h2>
+                  <ul class="list-unstyled">
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="Blog.html">Testimonials</a></li>
+                    <li><a href="technology.html">Technology</a></li>
+                    <li><a href="Recharge.html">Recharge</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                  </ul>
+                </div>
+            </div>
+            <div class="col-md-4 ml-auto">
+              <div class="mb-5">
+                <h2 class="footer-heading mb-4">Subscribe to Newsletter</h2>
+                <form action="#" method="post" class="footer-suscribe-form">
+                  <div class="input-group mb-3">
+                    <input type="text" class="form-control border-secondary text-white bg-transparent" placeholder="Enter Email" aria-label="Enter Email" aria-describedby="button-addon2">
+                    <div class="input-group-append">
+                      <button class="btn btn-primary text-white" type="button" id="button-addon2">Subscribe</button>
+                    </div>
+                  </div>
+              </div>
+              <ul>
+              <h2 class="footer-heading mb-4">Follow us</h2>
+              <li><a href="#about-section" class="smoothscroll pl-0 pr-3"><span class="icon-facebook"></span></a></li>
+              <li><iframe src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fwww.facebook.com%2FSmile4GImage%2F&width=450&layout=standard&action=like&size=small&share=true&height=35&appId" width="450" height="35" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe> </li>
+              <a href="https://twitter.com/YacubAjibola" class="pl-3 pr-3"><span class="icon-twitter"></span></a>
+              <a href="https://github.com/yomofo2s/" class="pl-3 pr-3"><span class="icon-github"></span></a>
+              <a href="https://www.linkedin.com/in/yaqub-omofoyewa-0519b660/" class="pl-3 pr-3"><span class="icon-linkedin"></span></a>
+              </ul>
+          </div>
+          </div>
+          <div class="row pt-5 mt-5 text-center">
+            <div class="col-md-12">
+              <div class="border-top pt-5">
+                <p>
+              <!-- Link back to ImageAddiction can't be removed. Website is licensed under CC BY 3.0. -->
+            <small> Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This Website is designed <i class="icon-heart text-danger" aria-hidden="true"></i> by <a href="www.iaenterprise.com" target="_blank" >ImageAddiction</a> </small>
+              <!-- Link back to ImageAddiction can't be removed. Website is licensed under CC BY 3.0. -->
+              </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
 
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/popper.min.js"></script>
