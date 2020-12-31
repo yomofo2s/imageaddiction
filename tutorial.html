@@ -85,7 +85,7 @@
       </div>
     </div>
 
-    <article>
+        <article>
           <div class="site-section">
             <div class="container">
               <div class="row">
@@ -103,7 +103,12 @@
                     </a>
                 </div>
               </div>
-              <blockquote><p>When should you use a branch? <code>$ git branch</code></p></blockquote>
+            </div>
+          </div>
+
+            <div>
+              <div>
+                  <blockquote><p>When should you use a branch? <code>$ git branch</code></p></blockquote>
                   <p> A Branch is suitable for continuing development. It is dynamic and moves with each commit you make. 
                     <ul> 
                       <li>A branch can be used to represents an individual customer release. If you want to start version 1.1 of your project 
@@ -119,42 +124,40 @@
                       class="img-fluid">
                   </a>
               </section>
-              <section>
-              <blockquote><p>How should you name your branches?</p></blockquote>
-              <code>$ git checkout -b new-feature</code>
-              <strong><p>Naming your branches is practically up to you and your project policies. 
-                I say it is essentially arbitrary, though there are some limitations.
-                However, you should consider the key differentiating characteristic: 
-                will the naming convention be static and immutable? or will the naming 
-                convention be dynamic for development? </p> </strong> 
-                <p>An example of new-feature is shown below in Figure 1</p>
-                <div>
-                  <section><h6>
-                  <a href="showing workflow">
-                      <img src="images/git/12.png" alt="creating a new git branch"
-                        class="img-fluid">
-                    </a>
-                  </section></h6>
-                </div>
-              </section>
+              </div>
+                <section>
+                     <blockquote><p>How should you name your branches?</p></blockquote>
+                      <code>$ git checkout -b new-feature</code>
+                      <strong><p>Naming your branches is practically up to you and your project policies. 
+                        I say it is essentially arbitrary, though there are some limitations.
+                       However, you should consider the key differentiating characteristic: 
+                       will the naming convention be static and immutable? or will the naming 
+                       convention be dynamic for development? </p> </strong> 
+                       <p>An example of new-feature is shown below in Figure 1</p>
+                        <div>
+                          <section><h6>
+                          <a href="showing workflow">
+                              <img src="images/git/12.png" alt="creating a new git branch"
+                                class="img-fluid">
+                            </a>
+                          </section></h6>
+                        </div>
+                </section>
 
-              <section>
+              
                <blockquote> <p>Merging your git branches?</p></blockquote>
-              <code>$ git merge -b new-feature</code>
-              <strong><p>Merging your depends whether you are ready to merge your project with the master branch. 
+               <code>$ git merge -b new-feature</code>
+                <strong><p>Merging your depends whether you are ready to merge your project with the master branch. 
                 <em>remember the terms merging</em></p> </strong>
                 <div>
                   <a href="merging your branch to master">
                       <img src="images/git/12b.png" alt="GitBranch" 
                       class="img-fluid">
-                    </a>
-                </div> 
-              </section>
-            </div>
-            <section>
-            <ol>
+                  </a>
+                </div>        
+              <ol>
               <div>
-             <blockquote> <p>Things to keep in mind</p></blockquote>
+                  <blockquote> <p>Things to keep in mind</p></blockquote>
                   <p><ol> <li>With the few figures shown image, it is best to create new branch before you develop a new feature </li> 
                   <li> Merging directly to the master branch should be restricted.</li>
                     <li> Merging to local master branch should be synced only from upstream to local.</li> 
@@ -163,90 +166,11 @@
                     </ol></p>
                     <p>To see the more Git commands <a href="https://intellipaat.com/blog/tutorial/devops-tutorial/git-commands/" class="nav-link"> Essential git-commands for beginners </a> </p> 
                     <p>To find out more about git command <a href="https://about.gitlab.com/images/press/git-cheat-sheet.pdf" class=nav-link> for Git Cheat git-cheat-sheet </a></p>
-          </div>
-          </ol>
-        </section>
-        </div>   
+               
+              </div>
+            </div>
+          </div> 
       </article>
-    
-    <footer       
-    
-      <h3 class="mb-5">Comments</h3>
-       <ul class="comment-list">
-         <li class="comment">
-           <div class="vcard bio">
-            <img src="images/yaqub.png">
-         </div>
-                <div class="comment-body">
-                  <h3>YacubAjibola </h3>
-                  <div class="meta">October 6, 2020 at 2:21pm</div>
-                  <p>Git is a version control system that lets you manage and keep track of your source code history</p>
-                  <p><a href="#" class="reply">Reply</a></p>
-                </div>
-              </li>  
-            </ul>
-              <section
-                <section>             
-                  <ul>
-                    <li class="comment">
-                      <div class="vcard bio">
-                        <img src="" alt="">
-                      </div>
-                      <div class="comment-body">
-                        <h3>Yaqub Omofoyoyewa</h3>
-                        <div class="meta">October 6, 2020 at 2:21pm</div>
-                        <p>Developer, programmer, system support, cloud enthusiast</p>
-                        <p><a href="mailto:yacube@gmail.com#" class="email">Contact</a></p>
-                      </div>
-                    </li>
-                  </ul>
-                      <!-- END comment-list -->
-                      
-                      <div class="comment-form-wrap pt-5">
-                        <h3 class="mb-5">Leave a comment</h3>
-                        <form action="#" class="">
-                          <div class="form-group">
-                            <label for="name">Name *</label>
-                            <input type="text" class="form-control" id="name">
-                          </div>
-                          <div class="form-group">
-                            <label for="email">Email *</label>
-                            <input type="email" class="form-control" id="email">
-                          </div>
-                          <div class="form-group">
-                            <label for="website">Website</label>
-                            <input type="url" class="form-control" id="website">
-                          </div>
-
-                          <div class="form-group">
-                            <label for="message">Message</label>
-                            <textarea name="" id="message" cols="30" rows="10" class="form-control"></textarea>
-                          </div>
-                          <div class="form-group">
-                            <input type="submit" value="Post Comment" class="btn btn-primary btn-md text-white">
-                          </div>
-
-                        </form>
-                      </div>
-                    </div>
-
-                  </div>
-                  <div class="col-md-4 sidebar">
-                    <div class="sidebar-box">
-                      <form action="#" class="search-form">
-                        <div class="form-group">
-                          <span class="icon fa fa-search"></span>
-                          <input type="text" class="form-control" placeholder="Type a keyword and hit enter">
-                        </div>
-                      </form>
-                    </div>
-                    </div>
-                  </div>
-                </section>  
-            </section>
-          </div>
-    </footer>
-
     
    <footer class="site-footer">
       <div>
