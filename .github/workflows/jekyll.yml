@@ -1,26 +1,27 @@
-name: Jekyll site CI
-
+name: Continuous Integration
 on:
   push:
-    branches: [ master ]
+    branches:
+      - master
   pull_request:
-    branches: [ master ]
-
+    branches:
+      - master
 jobs:
   build:
-    name: "Build Jekyll"
+    name: "Test with Jekyll ${{ matrix.jekyll }}"
     runs-on: "ubuntu-latest"
     strategy:
       matrix:
         jekyll: ["~> 3.9", "~> 4.2"]
     env:
       JEKYLL_VERSION: ${{ matrix.jekyll }}
-    
     steps:
-    - uses: actions/checkout@v2
-    - name: Build the site in the jekyll/builder container
-      run: |
-        export JEKYLL_VERSION=3.8
-        docker run \
-        -v ${{ github.workspace }}:/srv/jekyll -v ${{ github.workspace }}/_site:/srv/jekyll/_site \
-        jekyll/builder:latest /bin/bash -c "chmod 777 /srv/jekyll && jekyll build --future"
+      - name: Checkout Repository
+        uses: actions/checkout@v2
+      - name: Set Up Ruby 2.5
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: 2.5
+          bundler-cache: true
+      - name: Run tests
+        run: script/cibuild
