@@ -8,8 +8,8 @@ on:
 
 jobs:
   build:
-    name: Build Jekyll
-    runs-on: ubuntu-latest
+    name: "Build Jekyll"
+    runs-on: "ubuntu-latest"
     strategy:
       matrix:
         jekyll: ["~> 3.9", "~> 4.2"]
