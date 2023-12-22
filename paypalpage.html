@@ -16,14 +16,14 @@
                         <h1> Simplified Payment</h1>
                         <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
                             <!-- Identify your business so that you can collect the payments. -->
-                            <input type="hidden" name="business" value="kin@kinskards.com">
+                            <input type="hidden" name="personal" value="yacube@gmail.com">
 
                             <!-- Specify an Add to Cart button. -->
                             <input type="hidden" name="cmd" value="_cart">
                             <input type="hidden" name="add" value="1">
 
                             <!-- Specify details about the item that buyers will purchase. -->
-                            <input type="hidden" name="item_name" value="1year - Plan">
+                            <input type="hidden" name="item_name" value="Plan">
                             <input type="hidden" name="currency_code" value="EUR">
 
                             <!-- Provide a drop-down menu option field. -->
@@ -50,11 +50,11 @@
                             <!-- Specify the price that PayPal uses for each option. -->
                             <input type="hidden" name="option_index" value="1">
                             <input type="hidden" name="option_select0" value="2x4">
-                            <input type="hidden" name="option_amount0" value="3.95">
+                            <input type="hidden" name="option_amount0" value="39.95">
                             <input type="hidden" name="option_select1" value="3x5">
-                            <input type="hidden" name="option_amount1" value="4.95">
+                            <input type="hidden" name="option_amount1" value="40.95">
                             <input type="hidden" name="option_select2" value="4x6">
-                            <input type="hidden" name="option_amount2" value="5.95">
+                            <input type="hidden" name="option_amount2" value="50.95">
 
                             <!-- Display the payment button. -->
                             <input type="image" name="submit"
