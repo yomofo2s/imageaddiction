@@ -8,36 +8,98 @@
 </head>
 
 <body>
-    <div id="paypal-button-container"></div>
-    <p id="result-message"></p>
-    <script
-        src="https://www.paypal.com/sdk/js?client-id=AVVJctPatHfT2AkcCX2CG5MtWKCIXfoq-YbDftMBUxsvckFBReK0x4OGrUelnuQ4hAYRdbscpsGwAcI6&currency=EUR"
-        data-sdk-integration-source="button-factory"></script>
-    <script>
-        paypal.Buttons({
-            style: {
-                shape: 'rect',
-                color: 'gold',
-                layout: 'vertical',
-                label: 'paypal',
+    <div class="ftco-blocks-cover-1">
+        <div class="ftco-cover-1 overlay" style="background-image: url('images/about_us.jpg')">
+            <div class="container">
+                <div class="row align-items-center justify-content-center">
+                    <div class="col-lg-6 text-center">
+                        <h1> Simplified Payment</h1>
+                        <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+                            <!-- Identify your business so that you can collect the payments. -->
+                            <input type="hidden" name="business" value="kin@kinskards.com">
 
-            },
-            createOrder: function (data, actions) {
-                return actions.order.create({
-                    purchase_units: [{
-                        amount: {
-                            value: '1'
-                        }
-                    }]
-                });
-            },
-            onApprove: function (data, actions) {
-                return actions.order.capture().then(function (details) {
-                    alert('Transaction completed by ' + details.payer.name.given_name + '!');
-                });
-            }
-        }).render('#paypal-button-container');
-    </script>
+                            <!-- Specify an Add to Cart button. -->
+                            <input type="hidden" name="cmd" value="_cart">
+                            <input type="hidden" name="add" value="1">
+
+                            <!-- Specify details about the item that buyers will purchase. -->
+                            <input type="hidden" name="item_name" value="Birthday - Cake and Candle">
+                            <input type="hidden" name="currency_code" value="USD">
+
+                            <!-- Provide a drop-down menu option field. -->
+                            <input type="hidden" name="on0" value="Color">
+                            <label for="os0">Subscription scheme</label>
+                            <select name="os0" id="os0">
+                                <option value="Select a color scheme">
+                                    -- Select a Subscription scheme --</option>
+                                <option value="Blue">1year</option>
+                                <option value="Pink">2years</option>
+                                <option value="Yellow">5years</option>
+                            </select>
+
+                            <!-- Provide a drop-down menu option field with prices. -->
+                            <input type="hidden" name="on1" value="Size">
+                            <label for="os1">Size</label>
+                            <select name="os1" id="os1">
+                                <option value="Select a size">-- Select a plan --</option>
+                                <option value="2x4">50 EUR</option>
+                                <option value="3x5">90 EUR</option>
+                                <option value="4x6">200 EUR</option>
+                            </select>
+
+                            <!-- Specify the price that PayPal uses for each option. -->
+                            <input type="hidden" name="option_index" value="1">
+                            <input type="hidden" name="option_select0" value="2x4">
+                            <input type="hidden" name="option_amount0" value="3.95">
+                            <input type="hidden" name="option_select1" value="3x5">
+                            <input type="hidden" name="option_amount1" value="4.95">
+                            <input type="hidden" name="option_select2" value="4x6">
+                            <input type="hidden" name="option_amount2" value="5.95">
+
+                            <!-- Display the payment button. -->
+                            <input type="image" name="submit"
+                                src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif" alt="Add to Cart">
+                            <img alt="" width="1" height="1" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif">
+                        </form>
+
+                        <div id="paypal-button-container"></div>
+                        <p id="result-message"></p>
+                        <script
+                            src="https://www.paypal.com/sdk/js?client-id=AVVJctPatHfT2AkcCX2CG5MtWKCIXfoq-YbDftMBUxsvckFBReK0x4OGrUelnuQ4hAYRdbscpsGwAcI6&currency=EUR"
+                            data-sdk-integration-source="button-factory"></script>
+                        <script>
+                            paypal.Buttons({
+                                style: {
+                                    shape: 'rect',
+                                    color: 'gold',
+                                    layout: 'vertical',
+                                    label: 'paypal',
+
+                                },
+                                createOrder: function (data, actions) {
+                                    return actions.order.create({
+                                        purchase_units: [{
+                                            amount: {
+                                                value: '1'
+                                            }
+                                        }]
+                                    });
+                                },
+                                onApprove: function (data, actions) {
+                                    return actions.order.capture().then(function (details) {
+                                        alert('Transaction completed by ' + details.payer.name.given_name + '!');
+                                    });
+                                }
+                            }).render('#paypal-button-container');
+                        </script>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
 </body>
+
+
 
 </html>
