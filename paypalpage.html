@@ -1,105 +1,625 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Simplified Payment</title>
+  <title>Payment &mdash; ImageAddiction</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Secure payment for ImageAddiction services - IPTV subscriptions, data bundles, and IT services.">
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=DM+Sans:300,400,700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="fonts/icomoon/style.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
+  <link rel="stylesheet" href="css/aos.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body>
-    <div class="ftco-blocks-cover-1">
-        <div class="ftco-cover-1 overlay" style="background-image: url('images/about_us.jpg')">
-            <div class="container">
-                <div class="row align-items-center justify-content-center">
-                    <div class="col-lg-6 text-center">
-                        <h1> Simplified Payment</h1>
-                        <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
-                            <!-- Identify your business so that you can collect the payments. -->
-                            <input type="hidden" name="personal" value="yacube@gmail.com">
+<body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
 
-                            <!-- Specify an Add to Cart button. -->
-                            <input type="hidden" name="cmd" value="_cart">
-                            <input type="hidden" name="add" value="1">
+  <div class="site-wrap" id="home-section">
 
-                            <!-- Specify details about the item that buyers will purchase. -->
-                            <input type="hidden" name="item_name" value="Plan">
-                            <input type="hidden" name="currency_code" value="EUR">
-
-                            <!-- Provide a drop-down menu option field. -->
-                            <input type="hidden" name="on0" value="Sub">
-                            <label for="os0">Subscription scheme</label>
-                            <select name="os0" id="os0">
-                                <option value="Select a Subscription scheme">
-                                    -- Select a Subscription scheme --</option>
-                                <option value="Blue">1year</option>
-                                <option value="Pink">2years</option>
-                                <option value="Yellow">5years</option>
-                            </select>
-
-                            <!-- Provide a drop-down menu option field with prices. -->
-                            <input type="hidden" name="on1" value="Size">
-                            <label for="os1">Size</label>
-                            <select name="os1" id="os1">
-                                <option value="Select a size">-- Select a plan --</option>
-                                <option value="2x4">50 EUR</option>
-                                <option value="3x5">90 EUR</option>
-                                <option value="4x6">200 EUR</option>
-                            </select>
-
-                            <!-- Specify the price that PayPal uses for each option. -->
-                            <input type="hidden" name="option_index" value="1">
-                            <input type="hidden" name="option_select0" value="2x4">
-                            <input type="hidden" name="option_amount0" value="49.99">
-                            <input type="hidden" name="option_select1" value="3x5">
-                            <input type="hidden" name="option_amount1" value="89.99">
-                            <input type="hidden" name="option_select2" value="4x6">
-                            <input type="hidden" name="option_amount2" value="199.99">
-
-                            <!-- Display the payment button. -->
-                            <input type="image" name="submit"
-                                src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif" alt="Add to Cart">
-                            <img alt="" width="1" height="1" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif">
-                        </form>
-
-                        <div id="paypal-button-container"></div>
-                        <p id="result-message"></p>
-                        <script
-                            src="https://www.paypal.com/sdk/js?client-id=AVVJctPatHfT2AkcCX2CG5MtWKCIXfoq-YbDftMBUxsvckFBReK0x4OGrUelnuQ4hAYRdbscpsGwAcI6&currency=EUR"
-                            data-sdk-integration-source="button-factory"></script>
-                        <script>
-                            paypal.Buttons({
-                                style: {
-                                    shape: 'rect',
-                                    color: 'gold',
-                                    layout: 'vertical',
-                                    label: 'paypal',
-
-                                },
-                                createOrder: function (data, actions) {
-                                    return actions.order.create({
-                                        purchase_units: [{
-                                            amount: {
-                                                value: '1'
-                                            }
-                                        }]
-                                    });
-                                },
-                                onApprove: function (data, actions) {
-                                    return actions.order.capture().then(function (details) {
-                                        alert('Transaction completed by ' + details.payer.name.given_name + '!');
-                                    });
-                                }
-                            }).render('#paypal-button-container');
-                        </script>
-                    </div>
-                </div>
-            </div>
+    <div class="site-mobile-menu site-navbar-target">
+      <div class="site-mobile-menu-header">
+        <div class="site-mobile-menu-close mt-3">
+          <span class="icon-close2 js-menu-toggle"></span>
         </div>
+      </div>
+      <div class="site-mobile-menu-body"></div>
     </div>
+
+    <header class="site-navbar site-navbar-target" role="banner">
+      <div class="container">
+        <div class="row align-items-center position-relative">
+          <div class="col-3 col-lg-2">
+            <div class="site-logo">
+              <a href="index.html">ImageAddiction</a>
+            </div>
+          </div>
+          <div class="col-9 col-lg-10 text-right">
+            <nav class="site-navigation d-none d-lg-inline-block" role="navigation">
+              <ul class="site-menu main-menu js-clone-nav">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li class="has-children active">
+                  <a href="technology.html" class="nav-link">Services</a>
+                  <ul class="dropdown">
+                    <li><a href="technology.html">IT Consulting</a></li>
+                    <li><a href="technology.html">Managed IT Services</a></li>
+                    <li><a href="technology.html">Web Design</a></li>
+                    <li><a href="Recharge.html">Recharge & Payments</a></li>
+                  </ul>
+                </li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="Blog.html" class="nav-link">Blog</a></li>
+                <li><a href="tutorial.html" class="nav-link">Resources</a></li>
+                <li class="nav-cta"><a href="contact.html" class="nav-link btn-contact">Get in Touch</a></li>
+              </ul>
+            </nav>
+            <div class="toggle-button d-inline-block d-lg-none">
+              <a href="#" class="site-menu-toggle js-menu-toggle text-white">
+                <span class="icon-menu h3 text-white"></span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <div class="ftco-blocks-cover-1">
+      <div class="ftco-cover-1 overlay" style="background-image: url('images/about_us.jpg')">
+        <div class="container">
+          <div class="row align-items-center justify-content-center">
+            <div class="col-lg-8 text-center hero-content">
+              <span class="hero-tagline">Secure Checkout</span>
+              <h1 class="hero-title">Complete Your Payment</h1>
+              <p class="hero-subtitle">Fast, secure payment processing. Pay via PayPal or bank transfer.</p>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
+
+    <!-- Payment Section -->
+    <div class="site-section bg-light">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-7">
+            <div class="payment-card">
+              <h3 class="text-center mb-4">Choose Your Service</h3>
+
+              <!-- Step 1: Select Service -->
+              <div class="payment-step mb-4">
+                <div class="step-header">
+                  <span class="step-number">1</span>
+                  <span class="step-title">Select Service Type</span>
+                </div>
+                <div class="form-group">
+                  <select id="service-type" class="form-control form-control-lg">
+                    <option value="">-- Select a service --</option>
+                    <option value="iptv">IPTV Subscription</option>
+                    <option value="data">Smile Data Bundle</option>
+                    <option value="voip">SmileVoice Credit</option>
+                    <option value="custom">Custom Amount</option>
+                  </select>
+                </div>
+              </div>
+
+              <!-- Step 2: Select Plan (shown based on service) -->
+              <div class="payment-step mb-4" id="plan-step" style="display: none;">
+                <div class="step-header">
+                  <span class="step-number">2</span>
+                  <span class="step-title">Select Plan</span>
+                </div>
+
+                <!-- IPTV Plans -->
+                <div id="iptv-plans" class="plan-options" style="display: none;">
+                  <div class="plan-option" data-price="60" data-name="IPTV 12 Months">
+                    <div class="plan-radio">
+                      <input type="radio" name="plan" id="iptv-12m" value="60">
+                      <label for="iptv-12m"></label>
+                    </div>
+                    <div class="plan-details">
+                      <h5>12 Months</h5>
+                      <p>Full access to all channels for 1 year</p>
+                    </div>
+                    <div class="plan-price">&euro;60</div>
+                  </div>
+                  <div class="plan-option recommended" data-price="100" data-name="IPTV 24 Months">
+                    <div class="plan-radio">
+                      <input type="radio" name="plan" id="iptv-24m" value="100">
+                      <label for="iptv-24m"></label>
+                    </div>
+                    <div class="plan-details">
+                      <h5>24 Months <span class="badge badge-success">Best Value</span></h5>
+                      <p>Save 17% - 2 years of entertainment</p>
+                    </div>
+                    <div class="plan-price">&euro;100</div>
+                  </div>
+                </div>
+
+                <!-- Data Plans -->
+                <div id="data-plans" class="plan-options" style="display: none;">
+                  <div class="plan-option" data-price="10" data-name="Smile 10GB Data">
+                    <div class="plan-radio">
+                      <input type="radio" name="plan" id="data-10" value="10">
+                      <label for="data-10"></label>
+                    </div>
+                    <div class="plan-details">
+                      <h5>10GB Data</h5>
+                      <p>Valid for 30 days</p>
+                    </div>
+                    <div class="plan-price">&euro;10</div>
+                  </div>
+                  <div class="plan-option" data-price="20" data-name="Smile 25GB Data">
+                    <div class="plan-radio">
+                      <input type="radio" name="plan" id="data-25" value="20">
+                      <label for="data-25"></label>
+                    </div>
+                    <div class="plan-details">
+                      <h5>25GB Data</h5>
+                      <p>Valid for 30 days</p>
+                    </div>
+                    <div class="plan-price">&euro;20</div>
+                  </div>
+                  <div class="plan-option" data-price="35" data-name="Smile 50GB Data">
+                    <div class="plan-radio">
+                      <input type="radio" name="plan" id="data-50" value="35">
+                      <label for="data-50"></label>
+                    </div>
+                    <div class="plan-details">
+                      <h5>50GB Data</h5>
+                      <p>Valid for 30 days</p>
+                    </div>
+                    <div class="plan-price">&euro;35</div>
+                  </div>
+                  <div class="plan-option" data-price="50" data-name="Smile Unlimited Lite">
+                    <div class="plan-radio">
+                      <input type="radio" name="plan" id="data-unlimited" value="50">
+                      <label for="data-unlimited"></label>
+                    </div>
+                    <div class="plan-details">
+                      <h5>Unlimited Lite</h5>
+                      <p>30 days unlimited browsing</p>
+                    </div>
+                    <div class="plan-price">&euro;50</div>
+                  </div>
+                </div>
+
+                <!-- VOIP Plans -->
+                <div id="voip-plans" class="plan-options" style="display: none;">
+                  <div class="plan-option" data-price="5" data-name="SmileVoice 500 Credit">
+                    <div class="plan-radio">
+                      <input type="radio" name="plan" id="voip-500" value="5">
+                      <label for="voip-500"></label>
+                    </div>
+                    <div class="plan-details">
+                      <h5>500 Credit</h5>
+                      <p>~50 minutes talk time</p>
+                    </div>
+                    <div class="plan-price">&euro;5</div>
+                  </div>
+                  <div class="plan-option" data-price="10" data-name="SmileVoice 1000 Credit">
+                    <div class="plan-radio">
+                      <input type="radio" name="plan" id="voip-1000" value="10">
+                      <label for="voip-1000"></label>
+                    </div>
+                    <div class="plan-details">
+                      <h5>1000 Credit</h5>
+                      <p>~100 minutes talk time</p>
+                    </div>
+                    <div class="plan-price">&euro;10</div>
+                  </div>
+                  <div class="plan-option" data-price="20" data-name="SmileVoice 2500 Credit">
+                    <div class="plan-radio">
+                      <input type="radio" name="plan" id="voip-2500" value="20">
+                      <label for="voip-2500"></label>
+                    </div>
+                    <div class="plan-details">
+                      <h5>2500 Credit</h5>
+                      <p>~250 minutes talk time</p>
+                    </div>
+                    <div class="plan-price">&euro;20</div>
+                  </div>
+                </div>
+
+                <!-- Custom Amount -->
+                <div id="custom-amount" class="plan-options" style="display: none;">
+                  <div class="form-group">
+                    <label for="custom-price">Enter Amount (EUR)</label>
+                    <div class="input-group">
+                      <div class="input-group-prepend">
+                        <span class="input-group-text">&euro;</span>
+                      </div>
+                      <input type="number" id="custom-price" class="form-control form-control-lg" min="1" max="1000" placeholder="Enter amount">
+                    </div>
+                    <small class="form-text text-muted">Minimum &euro;1, Maximum &euro;1000</small>
+                  </div>
+                  <div class="form-group">
+                    <label for="custom-description">Description (optional)</label>
+                    <input type="text" id="custom-description" class="form-control" placeholder="e.g., IT Consulting Service">
+                  </div>
+                </div>
+              </div>
+
+              <!-- Step 3: Contact Details -->
+              <div class="payment-step mb-4" id="contact-step" style="display: none;">
+                <div class="step-header">
+                  <span class="step-number">3</span>
+                  <span class="step-title">Your Details</span>
+                </div>
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <label for="customer-email">Email Address <span class="text-danger">*</span></label>
+                      <input type="email" id="customer-email" class="form-control" placeholder="your@email.com" required>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <label for="customer-phone">Phone Number</label>
+                      <input type="tel" id="customer-phone" class="form-control" placeholder="+234 xxx xxx xxxx">
+                    </div>
+                  </div>
+                </div>
+                <div class="form-group" id="smile-number-group" style="display: none;">
+                  <label for="smile-number">Smile Account Number <span class="text-danger">*</span></label>
+                  <input type="text" id="smile-number" class="form-control" placeholder="Enter your Smile number">
+                  <small class="form-text text-muted">Required for data and VOIP top-ups</small>
+                </div>
+              </div>
+
+              <!-- Order Summary -->
+              <div class="order-summary mb-4" id="order-summary" style="display: none;">
+                <h5>Order Summary</h5>
+                <div class="summary-row">
+                  <span id="summary-item">-</span>
+                  <span id="summary-price">-</span>
+                </div>
+                <div class="summary-total">
+                  <span>Total</span>
+                  <span id="summary-total">&euro;0.00</span>
+                </div>
+              </div>
+
+              <!-- PayPal Button -->
+              <div id="paypal-button-container" style="display: none;"></div>
+
+              <!-- Validation Message -->
+              <div id="validation-message" class="alert alert-warning" style="display: none;">
+                Please complete all required fields above.
+              </div>
+
+              <!-- Success Message -->
+              <div id="success-message" class="alert alert-success" style="display: none;">
+                <h5>Payment Successful!</h5>
+                <p>Thank you for your payment. You will receive a confirmation email shortly.</p>
+                <p>If you have any questions, please <a href="contact.html">contact us</a>.</p>
+              </div>
+
+              <div class="divider my-4">
+                <span>or pay via bank transfer</span>
+              </div>
+
+              <!-- Bank Transfer Info -->
+              <div class="bank-transfer-info">
+                <h5>Bank Transfer Details</h5>
+                <div class="bank-details">
+                  <p><strong>Bank:</strong> Guarantee Trust Bank</p>
+                  <p><strong>Account Name:</strong> ImageAddiction</p>
+                  <p><strong>Account Number:</strong> 0165422496</p>
+                  <p><strong>Currency:</strong> NGN</p>
+                </div>
+                <p class="text-muted small">After transfer, please send proof of payment to <a href="mailto:imageaddictionictservices@gmail.com">imageaddictionictservices@gmail.com</a> with your order details.</p>
+              </div>
+
+              <!-- Trust Badges -->
+              <div class="trust-badges text-center mt-4">
+                <div class="badge-item">
+                  <span class="flaticon-shield"></span>
+                  <span>Secure Payment</span>
+                </div>
+                <div class="badge-item">
+                  <span class="flaticon-check"></span>
+                  <span>Instant Activation</span>
+                </div>
+                <div class="badge-item">
+                  <span class="flaticon-phone-call"></span>
+                  <span>24/7 Support</span>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- Help Sidebar -->
+          <div class="col-lg-4">
+            <div class="payment-help-card">
+              <h4>Need Help?</h4>
+              <p>Our team is here to assist you with your purchase.</p>
+              <ul class="help-list">
+                <li><span class="icon-phone"></span> <a href="tel:+2348060369525">+234 806 036 9525</a></li>
+                <li><span class="icon-whatsapp"></span> <a href="https://wa.me/2348060369525" target="_blank">WhatsApp Us</a></li>
+                <li><span class="icon-envelope"></span> <a href="mailto:imageaddictionictservices@gmail.com">Email Support</a></li>
+              </ul>
+            </div>
+
+            <div class="payment-help-card mt-4">
+              <h4>How It Works</h4>
+              <ol class="how-it-works">
+                <li>Select your service and plan</li>
+                <li>Enter your contact details</li>
+                <li>Complete payment via PayPal</li>
+                <li>Receive activation within 24 hours</li>
+              </ol>
+            </div>
+
+            <div class="payment-help-card mt-4">
+              <h4>Accepted Payments</h4>
+              <div class="payment-methods">
+                <img src="https://www.paypalobjects.com/webstatic/mktg/Logo/pp-logo-100px.png" alt="PayPal" height="30">
+                <span class="ml-3">Bank Transfer (NGN)</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Load PayPal SDK -->
+    <script src="https://www.paypal.com/sdk/js?client-id=AVVJctPatHfT2AkcCX2CG5MtWKCIXfoq-YbDftMBUxsvckFBReK0x4OGrUelnuQ4hAYRdbscpsGwAcI6&currency=EUR&disable-funding=credit,card" data-sdk-integration-source="button-factory"></script>
+
+    <script>
+      // Payment page functionality
+      let selectedPrice = 0;
+      let selectedName = '';
+      let paypalButtonRendered = false;
+
+      const serviceSelect = document.getElementById('service-type');
+      const planStep = document.getElementById('plan-step');
+      const contactStep = document.getElementById('contact-step');
+      const orderSummary = document.getElementById('order-summary');
+      const paypalContainer = document.getElementById('paypal-button-container');
+      const validationMessage = document.getElementById('validation-message');
+      const successMessage = document.getElementById('success-message');
+      const smileNumberGroup = document.getElementById('smile-number-group');
+
+      // Service type change handler
+      serviceSelect.addEventListener('change', function() {
+        const service = this.value;
+
+        // Hide all plan sections
+        document.querySelectorAll('.plan-options').forEach(el => el.style.display = 'none');
+
+        // Reset selections
+        document.querySelectorAll('input[name="plan"]').forEach(el => el.checked = false);
+        document.querySelectorAll('.plan-option').forEach(el => el.classList.remove('selected'));
+        selectedPrice = 0;
+        selectedName = '';
+
+        if (service) {
+          planStep.style.display = 'block';
+
+          // Show appropriate plans
+          if (service === 'iptv') {
+            document.getElementById('iptv-plans').style.display = 'block';
+            smileNumberGroup.style.display = 'none';
+          } else if (service === 'data') {
+            document.getElementById('data-plans').style.display = 'block';
+            smileNumberGroup.style.display = 'block';
+          } else if (service === 'voip') {
+            document.getElementById('voip-plans').style.display = 'block';
+            smileNumberGroup.style.display = 'block';
+          } else if (service === 'custom') {
+            document.getElementById('custom-amount').style.display = 'block';
+            smileNumberGroup.style.display = 'none';
+          }
+
+          contactStep.style.display = 'block';
+        } else {
+          planStep.style.display = 'none';
+          contactStep.style.display = 'none';
+        }
+
+        updateOrderSummary();
+      });
+
+      // Plan option click handler
+      document.querySelectorAll('.plan-option').forEach(option => {
+        option.addEventListener('click', function() {
+          // Remove selected class from siblings
+          this.parentElement.querySelectorAll('.plan-option').forEach(el => el.classList.remove('selected'));
+
+          // Add selected class and check radio
+          this.classList.add('selected');
+          this.querySelector('input[type="radio"]').checked = true;
+
+          // Update price
+          selectedPrice = parseFloat(this.dataset.price);
+          selectedName = this.dataset.name;
+
+          updateOrderSummary();
+        });
+      });
+
+      // Custom amount handler
+      document.getElementById('custom-price').addEventListener('input', function() {
+        selectedPrice = parseFloat(this.value) || 0;
+        const desc = document.getElementById('custom-description').value;
+        selectedName = desc ? 'Custom: ' + desc : 'Custom Payment';
+        updateOrderSummary();
+      });
+
+      document.getElementById('custom-description').addEventListener('input', function() {
+        if (selectedPrice > 0) {
+          selectedName = this.value ? 'Custom: ' + this.value : 'Custom Payment';
+          updateOrderSummary();
+        }
+      });
+
+      // Update order summary and PayPal button
+      function updateOrderSummary() {
+        if (selectedPrice > 0) {
+          orderSummary.style.display = 'block';
+          document.getElementById('summary-item').textContent = selectedName;
+          document.getElementById('summary-price').textContent = '€' + selectedPrice.toFixed(2);
+          document.getElementById('summary-total').textContent = '€' + selectedPrice.toFixed(2);
+
+          // Show PayPal button
+          paypalContainer.style.display = 'block';
+          validationMessage.style.display = 'none';
+
+          // Render or re-render PayPal button
+          renderPayPalButton();
+        } else {
+          orderSummary.style.display = 'none';
+          paypalContainer.style.display = 'none';
+        }
+      }
+
+      // Render PayPal button
+      function renderPayPalButton() {
+        // Clear previous button
+        paypalContainer.innerHTML = '';
+
+        paypal.Buttons({
+          style: {
+            shape: 'rect',
+            color: 'gold',
+            layout: 'vertical',
+            label: 'paypal',
+          },
+          createOrder: function(data, actions) {
+            // Validate form
+            const email = document.getElementById('customer-email').value;
+            const service = serviceSelect.value;
+            const smileNumber = document.getElementById('smile-number').value;
+
+            if (!email) {
+              validationMessage.textContent = 'Please enter your email address.';
+              validationMessage.style.display = 'block';
+              return Promise.reject(new Error('Email required'));
+            }
+
+            if ((service === 'data' || service === 'voip') && !smileNumber) {
+              validationMessage.textContent = 'Please enter your Smile account number.';
+              validationMessage.style.display = 'block';
+              return Promise.reject(new Error('Smile number required'));
+            }
+
+            validationMessage.style.display = 'none';
+
+            return actions.order.create({
+              purchase_units: [{
+                description: selectedName,
+                amount: {
+                  value: selectedPrice.toFixed(2)
+                }
+              }]
+            });
+          },
+          onApprove: function(data, actions) {
+            return actions.order.capture().then(function(details) {
+              // Hide payment form
+              document.querySelector('.payment-card').innerHTML = `
+                <div class="text-center py-5">
+                  <div class="success-icon mb-4">
+                    <span class="flaticon-check" style="font-size: 60px; color: #28a745;"></span>
+                  </div>
+                  <h3 class="mb-3">Payment Successful!</h3>
+                  <p class="lead">Thank you, ${details.payer.name.given_name}!</p>
+                  <p>Your payment of <strong>€${selectedPrice.toFixed(2)}</strong> for <strong>${selectedName}</strong> has been received.</p>
+                  <p class="text-muted">A confirmation email will be sent to ${details.payer.email_address}</p>
+                  <hr class="my-4">
+                  <p>Your service will be activated within 24 hours. If you have any questions, please contact us.</p>
+                  <div class="mt-4">
+                    <a href="contact.html" class="btn btn-outline-primary mr-2">Contact Support</a>
+                    <a href="index.html" class="btn btn-primary">Back to Home</a>
+                  </div>
+                </div>
+              `;
+            });
+          },
+          onError: function(err) {
+            console.error('PayPal Error:', err);
+            validationMessage.textContent = 'Payment could not be processed. Please try again or contact support.';
+            validationMessage.style.display = 'block';
+          }
+        }).render('#paypal-button-container');
+      }
+    </script>
+
+    <footer class="site-footer">
+      <div class="container">
+        <div class="row footer-main">
+          <div class="col-lg-4 col-md-6 mb-5 mb-lg-0">
+            <div class="footer-brand">
+              <a href="index.html" class="footer-logo">ImageAddiction</a>
+            </div>
+            <p class="footer-description">A registered ICT company delivering innovative technology solutions across Africa. We help businesses thrive through expert IT services, consulting, and digital transformation.</p>
+            <div class="footer-social">
+              <a href="https://facebook.com/imageaddiction" target="_blank" rel="noopener" aria-label="Facebook"><span class="icon-facebook"></span></a>
+              <a href="https://twitter.com/imageaddiction" target="_blank" rel="noopener" aria-label="Twitter"><span class="icon-twitter"></span></a>
+              <a href="https://instagram.com/imageaddiction" target="_blank" rel="noopener" aria-label="Instagram"><span class="icon-instagram"></span></a>
+              <a href="https://www.linkedin.com/company/imageaddiction" target="_blank" rel="noopener" aria-label="LinkedIn"><span class="icon-linkedin"></span></a>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-6 mb-5 mb-lg-0">
+            <h3 class="footer-heading">Services</h3>
+            <ul class="footer-links">
+              <li><a href="technology.html">IT Consulting</a></li>
+              <li><a href="technology.html">Managed IT</a></li>
+              <li><a href="technology.html">Web Design</a></li>
+              <li><a href="technology.html">VOIP Solutions</a></li>
+              <li><a href="Recharge.html">Recharge</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-2 col-md-6 mb-5 mb-md-0">
+            <h3 class="footer-heading">Company</h3>
+            <ul class="footer-links">
+              <li><a href="about.html">About Us</a></li>
+              <li><a href="Blog.html">Blog</a></li>
+              <li><a href="tutorial.html">Resources</a></li>
+              <li><a href="careers.html">Careers</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <h3 class="footer-heading">Stay Updated</h3>
+            <p class="newsletter-text">Subscribe to our newsletter for the latest tech insights and company updates.</p>
+            <form action="#" method="post" class="footer-newsletter">
+              <div class="newsletter-form">
+                <input type="email" class="form-control" placeholder="Enter your email" aria-label="Email address" required>
+                <button type="submit" class="btn btn-primary">Subscribe</button>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="row footer-bottom">
+          <div class="col-md-6 text-center text-md-left">
+            <p class="copyright">&copy; <script>document.write(new Date().getFullYear());</script> ImageAddiction. All rights reserved.</p>
+          </div>
+          <div class="col-md-6 text-center text-md-right">
+            <ul class="footer-bottom-links">
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">Terms of Service</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+  </div>
+
+  <script src="js/jquery-3.3.1.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.sticky.js"></script>
+  <script src="js/aos.js"></script>
+  <script src="js/main.js"></script>
+
 </body>
-
-
 
 </html>

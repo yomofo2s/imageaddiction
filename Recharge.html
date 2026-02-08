@@ -8,6 +8,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <link href="https://fonts.googleapis.com/css?family=DM+Sans:300,400,700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="fonts/icomoon/style.css">
 
@@ -62,35 +63,38 @@
       <div class="container">
         <div class="row align-items-center position-relative">
 
-          <div class="col-lg-4">
-            <nav class="site-navigation text-right ml-auto " role="navigation">
-              <ul class="site-menu main-menu js-clone-nav ml-auto d-none d-lg-block">
-                <li><a href="index.html" class="nav-link">Home</a></li>
-                <li><a href="technology.html" class="nav-link">Technology</a></li>
-                <li><a href="Blog.html" class="nav-link">Blog</a></li>
-              </ul>
-            </nav>
-          </div>
-          <div class="col-lg-4 text-center">
+          <div class="col-3 col-lg-2">
             <div class="site-logo">
               <a href="index.html">ImageAddiction</a>
             </div>
-
-
-            <div class="ml-auto toggle-button d-inline-block d-lg-none"><a href="#"
-                class="site-menu-toggle py-5 js-menu-toggle text-white"><span
-                  class="icon-menu h3 text-white"></span></a></div>
           </div>
-          <div class="col-lg-4">
-            <nav class="site-navigation text-left mr-auto " role="navigation">
-              <ul class="site-menu main-menu js-clone-nav ml-auto d-none d-lg-block">
+
+          <div class="col-9 col-lg-10 text-right">
+            <nav class="site-navigation d-none d-lg-inline-block" role="navigation">
+              <ul class="site-menu main-menu js-clone-nav">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li class="has-children active">
+                  <a href="technology.html" class="nav-link">Services</a>
+                  <ul class="dropdown">
+                    <li><a href="technology.html">IT Consulting</a></li>
+                    <li><a href="technology.html">Managed IT Services</a></li>
+                    <li><a href="technology.html">Web Design</a></li>
+                    <li><a href="Recharge.html" class="active">Recharge & Payments</a></li>
+                  </ul>
+                </li>
                 <li><a href="about.html" class="nav-link">About</a></li>
-                <li class="active"><a href="Recharge.html" class="nav-link">Recharge</a></li>
-                <li><a href="contact.html" class="nav-link">Contact</a></li>
+                <li><a href="Blog.html" class="nav-link">Blog</a></li>
+                <li><a href="tutorial.html" class="nav-link">Resources</a></li>
+                <li class="nav-cta"><a href="contact.html" class="nav-link btn-contact">Get in Touch</a></li>
               </ul>
             </nav>
-          </div>
 
+            <div class="toggle-button d-inline-block d-lg-none">
+              <a href="#" class="site-menu-toggle js-menu-toggle text-white">
+                <span class="icon-menu h3 text-white"></span>
+              </a>
+            </div>
+          </div>
 
         </div>
       </div>
@@ -234,87 +238,71 @@
           </div>
 
 
-          <div class="col-12">
-            <span class="p-3">1</span>
-            <a href="index.html" class="p-3">2</a>
-            <a href="index.html" class="p-3">3</a>
-            <a href="index.html" class="p-3">4</a>
-          </div>
         </div>
       </div>
     </div>
 
 
 
-    <footer class="site-footer">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-6">
-            <div class="row">
-              <div class="col-md-7">
-                <h2 class="footer-heading mb-4">About Us</h2>
-                <p>ImageAddiction is a registered company with the Corporate Affairs Commission in West Africa
-                  States(NG).
-                  We specialize and offer varied services related to information and communication technology with Sales
-                  of Product and Services cross-continent. </p>
+      <footer class="site-footer">
+        <div class="container">
+          <div class="row footer-main">
+            <div class="col-lg-4 col-md-6 mb-5 mb-lg-0">
+              <div class="footer-brand">
+                <a href="index.html" class="footer-logo">ImageAddiction</a>
               </div>
-              <div class="col-md-4 ml-auto">
-                <h2 class="footer-heading mb-4">Features</h2>
-                <ul class="list-unstyled">
-                  <li><a href="about.html">About Us</a></li>
-                  <li><a href="technology.html">Technology</a></li>
-                  <li><a href="blog_smile.html">Smile How to Page</a></li>
-                  <li><a href="Recharge.html">Recharge</a></li>
-                  <li><a href="contact.html">Contact Us</a></li>
-                </ul>
+              <p class="footer-description">A registered ICT company delivering innovative technology solutions across Africa. We help businesses thrive through expert IT services, consulting, and digital transformation.</p>
+              <div class="footer-social">
+                <a href="https://facebook.com/imageaddiction" target="_blank" rel="noopener" aria-label="Facebook"><span class="icon-facebook"></span></a>
+                <a href="https://twitter.com/imageaddiction" target="_blank" rel="noopener" aria-label="Twitter"><span class="icon-twitter"></span></a>
+                <a href="https://instagram.com/imageaddiction" target="_blank" rel="noopener" aria-label="Instagram"><span class="icon-instagram"></span></a>
+                <a href="https://www.linkedin.com/company/imageaddiction" target="_blank" rel="noopener" aria-label="LinkedIn"><span class="icon-linkedin"></span></a>
               </div>
-
             </div>
-          </div>
-          <div class="col-md-4 ml-auto">
-
-            <div class="mb-5">
-              <h2 class="footer-heading mb-4">Subscribe to our Newsletter</h2>
-              <form action="#" method="post" class="footer-suscribe-form">
-                <div class="input-group mb-3">
-                  <input type="text" class="form-control border-secondary text-white bg-transparent"
-                    placeholder="Enter Email" aria-label="Enter Email" aria-describedby="button-addon2">
-                  <div class="input-group-append">
-                    <button class="btn btn-primary text-white" type="button" id="button-addon2">Subscribe</button>
-                  </div>
+            <div class="col-lg-2 col-md-6 mb-5 mb-lg-0">
+              <h3 class="footer-heading">Services</h3>
+              <ul class="footer-links">
+                <li><a href="technology.html">IT Consulting</a></li>
+                <li><a href="technology.html">Managed IT</a></li>
+                <li><a href="technology.html">Web Design</a></li>
+                <li><a href="technology.html">VOIP Solutions</a></li>
+                <li><a href="Recharge.html">Recharge</a></li>
+              </ul>
+            </div>
+            <div class="col-lg-2 col-md-6 mb-5 mb-md-0">
+              <h3 class="footer-heading">Company</h3>
+              <ul class="footer-links">
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="Blog.html">Blog</a></li>
+                <li><a href="tutorial.html">Resources</a></li>
+                <li><a href="careers.html">Careers</a></li>
+                <li><a href="contact.html">Contact</a></li>
+              </ul>
+            </div>
+            <div class="col-lg-4 col-md-6">
+              <h3 class="footer-heading">Stay Updated</h3>
+              <p class="newsletter-text">Subscribe to our newsletter for the latest tech insights and company updates.</p>
+              <form action="#" method="post" class="footer-newsletter">
+                <div class="newsletter-form">
+                  <input type="email" class="form-control" placeholder="Enter your email" aria-label="Email address" required>
+                  <button type="submit" class="btn btn-primary">Subscribe</button>
                 </div>
-            </div>
-
-
-            <h2 class="footer-heading mb-4">Follow Us</h2>
-            <a href="#about-section" class="smoothscroll pl-0 pr-3"><span class="icon-facebook"></span></a>
-            <iframe
-              src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fwww.facebook.com%2FSmile4GImage%2F&width=450&layout=standard&action=like&size=small&share=true&height=35&appId"
-              width="450" height="35" style="border:none;overflow:hidden" scrolling="no" frameborder="0"
-              allowTransparency="true" allow="encrypted-media"></iframe>
-            <a href="#" class="pl-3 pr-3"><span class="icon-twitter"></span></a>
-            <a href="#" class="pl-3 pr-3"><span class="icon-instagram"></span></a>
-            <a href="#" class="pl-3 pr-3"><span class="icon-linkedin"></span></a>
-            </form>
-          </div>
-        </div>
-        <div class="row pt-5 mt-5 text-center">
-          <div class="col-md-12">
-            <div class="border-top pt-5">
-              <p>
-                <!-- Link back to ImageAddiction can't be removed. Website is licensed under CC BY 3.0. -->
-                Copyright &copy;
-                <script>document.write(new Date().getFullYear());</script> All rights reserved | This Website is
-                designed <i class="icon-heart text-danger" aria-hidden="true"></i> by <a href="www.iaenterprise.com"
-                  target="_blank">ImageAddiction</a>
-                <!-- Link back to ImageAddiction can't be removed. Website is licensed under CC BY 3.0. -->
-              </p>
+              </form>
             </div>
           </div>
-
+          <div class="row footer-bottom">
+            <div class="col-md-6 text-center text-md-left">
+              <p class="copyright">&copy; <script>document.write(new Date().getFullYear());</script> ImageAddiction. All rights reserved.</p>
+            </div>
+            <div class="col-md-6 text-center text-md-right">
+              <ul class="footer-bottom-links">
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms of Service</a></li>
+              </ul>
+            </div>
+          </div>
         </div>
-      </div>
-    </footer>
+      </footer>
 
   </div>
 

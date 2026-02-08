@@ -1,30 +1,25 @@
 <!doctype html>
 <html lang="en">
-<meta name=”viewport” content=”width=device-width, initial-scale=1″>
 
 <head>
-  <title>ImageAddiction &mdash; Website Design by ImageAddiction</title>
+  <title>Resources & Tutorials &mdash; ImageAddiction</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=DM+Sans:300,400,700&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="fonts/icomoon/style.css">
-
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/jquery.fancybox.min.css">
   <link rel="stylesheet" href="css/owl.carousel.min.css">
   <link rel="stylesheet" href="css/owl.theme.default.min.css">
   <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
   <link rel="stylesheet" href="css/aos.css">
-
-  <!-- MAIN CSS -->
   <link rel="stylesheet" href="css/style.css">
-
 </head>
 
 <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
-
 
   <div class="site-wrap" id="home-section">
 
@@ -37,271 +32,441 @@
       <div class="site-mobile-menu-body"></div>
     </div>
 
-
-
     <header class="site-navbar site-navbar-target" role="banner">
-
       <div class="container">
         <div class="row align-items-center position-relative">
-
-          <div class="col-lg-4">
-            <nav class="site-navigation text-right ml-auto " role="navigation">
-              <ul class="site-menu main-menu js-clone-nav ml-auto d-none d-lg-block">
-                <li><a href="index.html" class="nav-link">Home</a></li>
-                <li><a href="about.html" class="nav-link">About</a></li>
-              </ul>
-            </nav>
-          </div>
-          <div class="col-lg-4 text-center">
+          <div class="col-3 col-lg-2">
             <div class="site-logo">
-              <a href="Blog.html"><HOW-TO></a>
+              <a href="index.html">ImageAddiction</a>
             </div>
-            <div class="ml-auto toggle-button d-inline-block d-lg-none"><a href="#"
-                class="site-menu-toggle py-5 js-menu-toggle text-white"><span
-                  class="icon-menu h3 text-white"></span></a></div>
           </div>
-          <div class="col-lg-4">
-            <nav class="site-navigation text-left mr-auto " role="navigation">
-              <ul class="site-menu main-menu js-clone-nav ml-auto d-none d-lg-block">
-                <li><a href="contact.html" class="nav-link">Contact</a></li>
+          <div class="col-9 col-lg-10 text-right">
+            <nav class="site-navigation d-none d-lg-inline-block" role="navigation">
+              <ul class="site-menu main-menu js-clone-nav">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li class="has-children">
+                  <a href="technology.html" class="nav-link">Services</a>
+                  <ul class="dropdown">
+                    <li><a href="technology.html">IT Consulting</a></li>
+                    <li><a href="technology.html">Managed IT Services</a></li>
+                    <li><a href="technology.html">Web Design</a></li>
+                    <li><a href="Recharge.html">Recharge & Payments</a></li>
+                  </ul>
+                </li>
+                <li><a href="about.html" class="nav-link">About</a></li>
                 <li><a href="Blog.html" class="nav-link">Blog</a></li>
+                <li class="active"><a href="tutorial.html" class="nav-link">Resources</a></li>
+                <li class="nav-cta"><a href="contact.html" class="nav-link btn-contact">Get in Touch</a></li>
               </ul>
             </nav>
+            <div class="toggle-button d-inline-block d-lg-none">
+              <a href="#" class="site-menu-toggle js-menu-toggle text-white">
+                <span class="icon-menu h3 text-white"></span>
+              </a>
+            </div>
           </div>
-
-
         </div>
       </div>
-
     </header>
 
+    <!-- Hero Section -->
     <div class="ftco-blocks-cover-1">
-      <div class="ftco-cover-1 overlay" style="background-image: url('images/git.png')">
+      <div class="ftco-cover-1 overlay" style="background-image: url('images/hero_1.jpg')">
         <div class="container">
           <div class="row align-items-center justify-content-center">
-            <div class="col-lg-6 text-center">
-              <span class="d-block mb-3 text-white" data-aos="fade-up"> <span class="mx-2 text-primary">&bullet;</span>
-                Welcome to our Blog</span>
-              <h1 class="mb-4" data-aos="fade-up" data-aos-delay="100">How to use Git to implement a new feature/change
-                without affecting master branch</h1>
+            <div class="col-lg-8 text-center hero-content">
+              <span class="hero-tagline">Learn & Grow</span>
+              <h1 class="hero-title">Resources & Tutorials</h1>
+              <p class="hero-subtitle">Explore our collection of guides, tutorials, and videos to help you master technology and grow your business.</p>
             </div>
           </div>
         </div>
       </div>
     </div>
 
-    <article>
-      <div class="site-section">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-8 blog-content">
-              <blockquote>
-                <h3>
-                  <p class="lead">How to use Git to implement a new feature/change without affecting master branch</p>
-                </h3>
-              </blockquote>
-              <br>
-              <p>A Git branch is the fundamental means of launching a separate line of development withing a software
-                project. It allows development to continue in multiple directions simultaneously and potentially, to
-                produce different versions of the project.
-                The default branch in a repository is named master and most developers keep the repository’s most robust
-                and dependable line of development on that branch</p>
-              </br>
-              <blockquote>
-                <h3>
-                  <p> What to know as a beginner? </p>
-                </h3>
-              </blockquote>
-              <p> The git branch model is highly suitable for your day-day versionining as a developer. </p>
-              <a href="#">
-                <img src="images/git/git_branch_1.PNG" alt="Your github" class="img-fluid">
+    <!-- Resources Section -->
+    <div class="resources-section">
+      <div class="container">
+
+        <!-- Category Filter Tabs -->
+        <div class="resource-filters text-center mb-5">
+          <button class="filter-btn active" data-filter="all">All Resources</button>
+          <button class="filter-btn" data-filter="article">Articles</button>
+          <button class="filter-btn" data-filter="video">Videos</button>
+          <button class="filter-btn" data-filter="guide">Guides</button>
+          <button class="filter-btn" data-filter="external">External Links</button>
+        </div>
+
+        <!-- Resources Grid -->
+        <div class="row resource-grid">
+
+          <!-- ============================================
+               ARTICLE CARD TEMPLATE
+               To add a new article, copy this entire block
+               and update: image, category, title, description, link
+               ============================================ -->
+          <div class="col-lg-4 col-md-6 mb-4 resource-item" data-category="article">
+            <article class="resource-card">
+              <a href="blog_smile.html" class="resource-image">
+                <img src="images/hero_2.jpg" alt="Smile 4G LTE Guide">
+                <span class="resource-badge">Article</span>
               </a>
+              <div class="resource-content">
+                <div class="resource-meta">
+                  <span class="resource-category">Connectivity</span>
+                  <span class="resource-date">Dec 2024</span>
+                </div>
+                <h3><a href="blog_smile.html">How to Register and Use SmileVoice</a></h3>
+                <p>Complete guide to setting up and using SmileVoice for affordable VOIP calls over 4G LTE.</p>
+                <a href="blog_smile.html" class="resource-link">Read Article <span class="icon-arrow-right"></span></a>
+              </div>
+            </article>
+          </div>
+
+          <!-- ARTICLE: IT Infrastructure -->
+          <div class="col-lg-4 col-md-6 mb-4 resource-item" data-category="article">
+            <article class="resource-card">
+              <a href="article-it-infrastructure.html" class="resource-image">
+                <img src="images/hero_a.jpg" alt="IT Infrastructure Setup Guide">
+                <span class="resource-badge">Article</span>
+              </a>
+              <div class="resource-content">
+                <div class="resource-meta">
+                  <span class="resource-category">IT Infrastructure</span>
+                  <span class="resource-date">Feb 2026</span>
+                </div>
+                <h3><a href="article-it-infrastructure.html">Setting Up Your IT Infrastructure</a></h3>
+                <p>A comprehensive guide to building a solid IT foundation for your business, from networks to security.</p>
+                <a href="article-it-infrastructure.html" class="resource-link">Read Article <span class="icon-arrow-right"></span></a>
+              </div>
+            </article>
+          </div>
+
+          <!-- ARTICLE: Git Branching -->
+          <div class="col-lg-4 col-md-6 mb-4 resource-item" data-category="article">
+            <article class="resource-card">
+              <a href="#git-tutorial" class="resource-image">
+                <img src="images/git.png" alt="Git Branching Tutorial">
+                <span class="resource-badge">Article</span>
+              </a>
+              <div class="resource-content">
+                <div class="resource-meta">
+                  <span class="resource-category">Development</span>
+                  <span class="resource-date">Nov 2024</span>
+                </div>
+                <h3><a href="#git-tutorial">Git Branching Without Affecting Master</a></h3>
+                <p>Learn how to use Git branches to implement new features safely without breaking your main codebase.</p>
+                <a href="#git-tutorial" class="resource-link">Read Article <span class="icon-arrow-right"></span></a>
+              </div>
+            </article>
+          </div>
+
+          <!-- ============================================
+               VIDEO CARD TEMPLATE
+               To add a new video, copy this entire block
+               and update: thumbnail, title, description, video URL
+               ============================================ -->
+          <div class="col-lg-4 col-md-6 mb-4 resource-item" data-category="video">
+            <article class="resource-card resource-card-video">
+              <a href="https://www.youtube.com/watch?v=YOUR_VIDEO_ID" class="resource-image" data-fancybox="videos">
+                <img src="images/hero_a.jpg" alt="IT Infrastructure Setup">
+                <span class="resource-badge video">Video</span>
+                <div class="play-button">
+                  <span class="icon-play"></span>
+                </div>
+              </a>
+              <div class="resource-content">
+                <div class="resource-meta">
+                  <span class="resource-category">IT Infrastructure</span>
+                  <span class="resource-duration">12:45</span>
+                </div>
+                <h3><a href="https://www.youtube.com/watch?v=YOUR_VIDEO_ID" data-fancybox="videos">Setting Up Your IT Infrastructure</a></h3>
+                <p>Video walkthrough of essential IT infrastructure setup for small and medium businesses.</p>
+                <a href="https://www.youtube.com/watch?v=YOUR_VIDEO_ID" class="resource-link" data-fancybox="videos">Watch Video <span class="icon-arrow-right"></span></a>
+              </div>
+            </article>
+          </div>
+
+          <!-- ============================================
+               GUIDE/PDF CARD TEMPLATE
+               To add a new guide, copy this entire block
+               ============================================ -->
+          <div class="col-lg-4 col-md-6 mb-4 resource-item" data-category="guide">
+            <article class="resource-card">
+              <a href="https://about.gitlab.com/images/press/git-cheat-sheet.pdf" target="_blank" class="resource-image">
+                <img src="images/hero_b.jpg" alt="Git Cheat Sheet">
+                <span class="resource-badge guide">Guide</span>
+                <div class="download-icon">
+                  <span class="icon-download"></span>
+                </div>
+              </a>
+              <div class="resource-content">
+                <div class="resource-meta">
+                  <span class="resource-category">Development</span>
+                  <span class="resource-type">PDF Download</span>
+                </div>
+                <h3><a href="https://about.gitlab.com/images/press/git-cheat-sheet.pdf" target="_blank">Git Command Cheat Sheet</a></h3>
+                <p>Quick reference guide with all essential Git commands for everyday development workflows.</p>
+                <a href="https://about.gitlab.com/images/press/git-cheat-sheet.pdf" target="_blank" class="resource-link">Download PDF <span class="icon-arrow-right"></span></a>
+              </div>
+            </article>
+          </div>
+
+          <!-- ============================================
+               EXTERNAL LINK CARD TEMPLATE
+               To add a new external link, copy this entire block
+               ============================================ -->
+          <div class="col-lg-4 col-md-6 mb-4 resource-item" data-category="external">
+            <article class="resource-card">
+              <a href="https://docs.microsoft.com/en-us/azure/" target="_blank" rel="noopener" class="resource-image">
+                <img src="images/computer_.jpg" alt="Microsoft Azure Documentation">
+                <span class="resource-badge external">External</span>
+              </a>
+              <div class="resource-content">
+                <div class="resource-meta">
+                  <span class="resource-category">Cloud Services</span>
+                  <span class="resource-source">Microsoft</span>
+                </div>
+                <h3><a href="https://docs.microsoft.com/en-us/azure/" target="_blank" rel="noopener">Microsoft Azure Documentation</a></h3>
+                <p>Official Azure documentation for cloud services, virtual machines, and enterprise solutions.</p>
+                <a href="https://docs.microsoft.com/en-us/azure/" target="_blank" rel="noopener" class="resource-link">Visit Site <span class="icon-external-link"></span></a>
+              </div>
+            </article>
+          </div>
+
+          <!-- EXTERNAL: AWS -->
+          <div class="col-lg-4 col-md-6 mb-4 resource-item" data-category="external">
+            <article class="resource-card">
+              <a href="https://aws.amazon.com/getting-started/" target="_blank" rel="noopener" class="resource-image">
+                <img src="images/img_1.jpg" alt="AWS Getting Started">
+                <span class="resource-badge external">External</span>
+              </a>
+              <div class="resource-content">
+                <div class="resource-meta">
+                  <span class="resource-category">Cloud Services</span>
+                  <span class="resource-source">Amazon</span>
+                </div>
+                <h3><a href="https://aws.amazon.com/getting-started/" target="_blank" rel="noopener">AWS Getting Started Guide</a></h3>
+                <p>Comprehensive guide to getting started with Amazon Web Services for cloud computing.</p>
+                <a href="https://aws.amazon.com/getting-started/" target="_blank" rel="noopener" class="resource-link">Visit Site <span class="icon-external-link"></span></a>
+              </div>
+            </article>
+          </div>
+
+        </div>
+        <!-- End Resources Grid -->
+
+        <!-- Load More Button (optional) -->
+        <div class="text-center mt-4">
+          <button class="btn btn-outline-primary btn-lg load-more-btn" style="display:none;">
+            Load More Resources
+          </button>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Featured Tutorial Section (Git Article) -->
+    <div class="featured-tutorial" id="git-tutorial">
+      <div class="container">
+        <div class="row justify-content-center text-center mb-5">
+          <div class="col-lg-7">
+            <span class="section-label">Featured Tutorial</span>
+            <h2 class="section-title">Git Branching Best Practices</h2>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-8 mx-auto">
+            <div class="tutorial-content">
+
+              <div class="tutorial-section">
+                <h3>What is Git Branching?</h3>
+                <p>A Git branch is the fundamental means of launching a separate line of development within a software project. It allows development to continue in multiple directions simultaneously and potentially, to produce different versions of the project.</p>
+                <p>The default branch in a repository is named <code>master</code> (or <code>main</code>) and most developers keep the repository's most robust and dependable line of development on that branch.</p>
+                <figure class="tutorial-image">
+                  <img src="images/git/git_branch_1.PNG" alt="Git branching diagram" class="img-fluid">
+                  <figcaption>Basic Git branch structure</figcaption>
+                </figure>
+              </div>
+
+              <div class="tutorial-section">
+                <h3>When Should You Use a Branch?</h3>
+                <div class="code-block">
+                  <code>$ git branch</code>
+                </div>
+                <p>A branch is suitable for continuing development. It is dynamic and moves with each commit you make.</p>
+                <ul class="tutorial-list">
+                  <li>Use a branch to represent individual customer releases (e.g., version 1.0 vs 1.1)</li>
+                  <li>Encapsulate development phases: prototype, beta, stable, or bleeding-edge</li>
+                  <li>Isolate development of a single feature or complex bug fix</li>
+                  <li>Facilitate merging of several branches prior to release</li>
+                </ul>
+                <figure class="tutorial-image">
+                  <img src="images/git/git_branch_2.PNG" alt="Default branch" class="img-fluid">
+                  <figcaption>Default branch visualization</figcaption>
+                </figure>
+              </div>
+
+              <div class="tutorial-section">
+                <h3>Creating a New Branch</h3>
+                <div class="code-block">
+                  <code>$ git checkout -b new-feature</code>
+                </div>
+                <p>Naming your branches is up to you and your project policies. Consider whether the naming convention will be static and immutable, or dynamic for development.</p>
+                <figure class="tutorial-image">
+                  <img src="images/git/1-2.png" alt="Creating a new git branch" class="img-fluid">
+                  <figcaption>Figure 1: Creating a new feature branch</figcaption>
+                </figure>
+              </div>
+
+              <div class="tutorial-section">
+                <h3>Merging Your Branches</h3>
+                <div class="code-block">
+                  <code>$ git merge new-feature</code>
+                </div>
+                <p>After creating a branch and completing your work, you'll need to merge it back to the master branch when ready.</p>
+                <figure class="tutorial-image">
+                  <img src="images/git/12b.png" alt="Merging branches" class="img-fluid">
+                  <figcaption>Merging your branch back to master</figcaption>
+                </figure>
+              </div>
+
+              <div class="tutorial-section">
+                <h3>Best Practices</h3>
+                <ol class="tutorial-list numbered">
+                  <li>Always create a new branch before developing a new feature</li>
+                  <li>Restrict direct merging to the master branch</li>
+                  <li>Sync local master branch only from upstream to local</li>
+                  <li>Push to origin master branch only from local to origin</li>
+                  <li>Rebase master branch onto your feature branch periodically</li>
+                </ol>
+
+                <div class="tutorial-cta">
+                  <a href="https://about.gitlab.com/images/press/git-cheat-sheet.pdf" target="_blank" class="btn btn-primary btn-lg">
+                    <span class="icon-download mr-2"></span> Download Git Cheat Sheet
+                  </a>
+                </div>
+              </div>
+
             </div>
           </div>
         </div>
       </div>
+    </div>
 
-      <div class="site-section">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-8 blog-content">
-              <blockquote>
-                <h3>
-                  <p class="lead"> When should you use a branch?</p>
-                </h3>
-              </blockquote><code>$ git branch</code>
-              <p> A Branch is suitable for continuing development. It is dynamic and moves with each commit you make.
-              <ul>
-                <li>A branch can be used to represents an individual customer release. If you want to start version 1.1
-                  of your project
-                  but you know that some of your customers want to stick with version 1.0, then keep the old version
-                  alive as a separate branch</li>
-                <li> A branch can encapsulate a development phase, such as the prototype, beta, stable or bleeding-edge
-                  release.</li>
-                <li> You can use branch to isolate the development of a single feature or research into a particularly
-                  complex bug.
-                  For example, you can introduce a branch for a well-defined and conceptually isolated task or to
-                  facilitate a merge of several branches prior to a release </li>
-              </ul>
-              </p>
-              <section>
-                <a href="#">
-                  <img src="images/git/git_branch_2.PNG" alt="default branch" class="img-fluid">
-                </a>
-              </section>
-            </div>
+    <!-- CTA Section -->
+    <div class="cta-section">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-8">
+            <h2>Need Help With Your IT Projects?</h2>
+            <p>Our team of experts is ready to help you implement the right technology solutions for your business.</p>
           </div>
-          <section>
-            <blockquote>
-              <h3>
-                <p>How should you name your branches?</p>
-              </h3>
-            </blockquote>
-            <code>$ git checkout -b new-feature</code>
-            <strong>
-              <p>Naming your branches is practically up to you and your project policies.
-                I say it is essentially arbitrary, though there are some limitations.
-                However, you should consider the key differentiating characteristic:
-                will the naming convention be static and immutable? or will the naming
-                convention be dynamic for development? </p>
-            </strong>
-            <p>An example of new-feature is shown below in Figure 1</p>
-          </section>
-          <section>
-            <h6>
-              <a href="showing workflow">
-                <img src="images/git/1-2.png" alt="creating a new git branch" class="img-fluid">
-              </a>
-          </section>
-          </h6>
-
-          <div>
-            <blockquote>
-              <h3>
-                <p>Merging your git branches</p>
-              </h3>
-            </blockquote>
-            <code>$ git merge -b new-feature</code>
-            <strong>
-              <p>After you have created a branch. It may be necessary for you to merge your branch with the Master
-                Branch. So, merging your branch depends whether you are ready to merge your project with the master
-                branch.
-                Remember the terms <em>merging</em></p>
-            </strong>
-            <div>
-              <a href="merging your branch to master">
-                <img src="images/git/12b.png" alt="GitBranch" class="img-fluid">
-              </a>
-            </div>
-          </div>
-
-          <div>
-            <blockquote>
-              <h3>
-                <p>Things to keep in mind</p>
-              </h3>
-            </blockquote>
-            <p>
-            <ol>
-              <li>With the few figures shown image, it is best to create new branch before you develop a new feature
-              </li>
-              <li> Merging directly to the master branch should be restricted.</li>
-              <li> Merging to local master branch should be synced only from upstream to local.</li>
-              <li> Pushing to origin master branch should be sync only, from local to origin.</li>
-              <li> Keep rebasing (making sure you sync between upstream master branch onto your branch) master branch
-                onto feature branch periodically </li>
-            </ol>
-            </p>
-            <p>
-            <h4>To find out more about git command</h4> <a
-              href="https://about.gitlab.com/images/press/git-cheat-sheet.pdf" class=nav-link> for Git Cheat
-              git-cheat-sheet </a></p>
+          <div class="col-lg-4 text-lg-right">
+            <a href="contact.html" class="btn btn-light btn-lg">Get in Touch</a>
           </div>
         </div>
       </div>
-    </article>
+    </div>
 
     <footer class="site-footer">
-      <div>
-        <div class="container">
-          <div class="row">
-            <div class="col-md-6">
-              <div class="row">
-                <div class="col-md-7">
-                  <h2 class="footer-heading mb-4">About Us</h2>
-                  <p>ImageAddiction is a registered company with the Corporate Affairs Commission.
-                    We deals and offer varied services related to information and communication technology with Sales of
-                    Product and Services Nationwide. </p>
-                </div>
-                <div class="col-md-4 ml-auto">
-                  <h2 class="footer-heading mb-4">Features</h2>
-                  <ul class="list-unstyled">
-                    <li><a href="about.html">About Us</a></li>
-                    <li><a href="Blog.html">Testimonials</a></li>
-                    <li><a href="technology.html">Technology</a></li>
-                    <li><a href="Recharge.html">Recharge</a></li>
-                    <li><a href="contact.html">Contact Us</a></li>
-                  </ul>
-                </div>
-              </div>
-              <div class="col-md-4 ml-auto">
-                <div class="mb-5">
-                  <h2 class="footer-heading mb-4">Subscribe to Newsletter</h2>
-                  <form action="#" method="post" class="footer-suscribe-form">
-                    <div class="input-group mb-3">
-                      <input type="text" class="form-control border-secondary text-white bg-transparent"
-                        placeholder="Enter Email" aria-label="Enter Email" aria-describedby="button-addon2">
-                      <div class="input-group-append">
-                        <button class="btn btn-primary text-white" type="button" id="button-addon2">Subscribe</button>
-                      </div>
-                    </div>
-                </div>
-                <ul>
-                  <h2 class="footer-heading mb-4">Follow us</h2>
-                  <li><a href="#about-section" class="smoothscroll pl-0 pr-3"><span class="icon-facebook"></span></a>
-                  </li>
-                  <li><iframe
-                      src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fwww.facebook.com%2FSmile4GImage%2F&width=450&layout=standard&action=like&size=small&share=true&height=35&appId"
-                      width="450" height="35" style="border:none;overflow:hidden" scrolling="no" frameborder="0"
-                      allowTransparency="true" allow="encrypted-media"></iframe> </li>
-                  <a href="https://twitter.com/YacubAjibola" class="pl-3 pr-3"><span class="icon-twitter"></span></a>
-                  <a href="https://github.com/yomofo2s/" class="pl-3 pr-3"><span class="icon-github"></span></a>
-                  <a href="https://www.linkedin.com/in/yaqub-omofoyewa-0519b660/" class="pl-3 pr-3"><span
-                      class="icon-linkedin"></span></a>
-                </ul>
-              </div>
+      <div class="container">
+        <div class="row footer-main">
+          <div class="col-lg-4 col-md-6 mb-5 mb-lg-0">
+            <div class="footer-brand">
+              <a href="index.html" class="footer-logo">ImageAddiction</a>
             </div>
-            <div class="row pt-5 mt-5 text-center">
-              <div class="col-md-12">
-                <div class="border-top pt-5">
-                  <p>
-                    <!-- Link back to ImageAddiction can't be removed. Website is licensed under CC BY 3.0. -->
-                    <small> Copyright &copy;
-                      <script>document.write(new Date().getFullYear());</script> All rights reserved | This Website is
-                      designed <i class="icon-heart text-danger" aria-hidden="true"></i> by <a
-                        href="www.iaenterprise.com" target="_blank">ImageAddiction</a>
-                    </small>
-                    <!-- Link back to ImageAddiction can't be removed. Website is licensed under CC BY 3.0. -->
-                  </p>
-                </div>
-              </div>
+            <p class="footer-description">A registered ICT company delivering innovative technology solutions across Africa. We help businesses thrive through expert IT services, consulting, and digital transformation.</p>
+            <div class="footer-social">
+              <a href="https://facebook.com/imageaddiction" target="_blank" rel="noopener" aria-label="Facebook"><span class="icon-facebook"></span></a>
+              <a href="https://twitter.com/imageaddiction" target="_blank" rel="noopener" aria-label="Twitter"><span class="icon-twitter"></span></a>
+              <a href="https://instagram.com/imageaddiction" target="_blank" rel="noopener" aria-label="Instagram"><span class="icon-instagram"></span></a>
+              <a href="https://www.linkedin.com/company/imageaddiction" target="_blank" rel="noopener" aria-label="LinkedIn"><span class="icon-linkedin"></span></a>
             </div>
           </div>
+          <div class="col-lg-2 col-md-6 mb-5 mb-lg-0">
+            <h3 class="footer-heading">Services</h3>
+            <ul class="footer-links">
+              <li><a href="technology.html">IT Consulting</a></li>
+              <li><a href="technology.html">Managed IT</a></li>
+              <li><a href="technology.html">Web Design</a></li>
+              <li><a href="technology.html">VOIP Solutions</a></li>
+              <li><a href="Recharge.html">Recharge</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-2 col-md-6 mb-5 mb-md-0">
+            <h3 class="footer-heading">Company</h3>
+            <ul class="footer-links">
+              <li><a href="about.html">About Us</a></li>
+              <li><a href="Blog.html">Blog</a></li>
+              <li><a href="tutorial.html">Resources</a></li>
+              <li><a href="careers.html">Careers</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <h3 class="footer-heading">Stay Updated</h3>
+            <p class="newsletter-text">Subscribe to our newsletter for the latest tech insights and company updates.</p>
+            <form action="#" method="post" class="footer-newsletter">
+              <div class="newsletter-form">
+                <input type="email" class="form-control" placeholder="Enter your email" aria-label="Email address" required>
+                <button type="submit" class="btn btn-primary">Subscribe</button>
+              </div>
+            </form>
+          </div>
         </div>
+        <div class="row footer-bottom">
+          <div class="col-md-6 text-center text-md-left">
+            <p class="copyright">&copy; <script>document.write(new Date().getFullYear());</script> ImageAddiction. All rights reserved.</p>
+          </div>
+          <div class="col-md-6 text-center text-md-right">
+            <ul class="footer-bottom-links">
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">Terms of Service</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </footer>
 
-    <script src="js/jquery-3.3.1.min.js"></script>
-    <script src="js/popper.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/owl.carousel.min.js"></script>
-    <script src="js/jquery.sticky.js"></script>
-    <script src="js/jquery.waypoints.min.js"></script>
-    <script src="js/jquery.animateNumber.min.js"></script>
-    <script src="js/jquery.fancybox.min.js"></script>
-    <script src="js/jquery.easing.1.3.js"></script>
-    <script src="js/aos.js"></script>
+  </div>
 
-    <script src="js/main.js"></script>
+  <script src="js/jquery-3.3.1.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/jquery.sticky.js"></script>
+  <script src="js/jquery.waypoints.min.js"></script>
+  <script src="js/jquery.fancybox.min.js"></script>
+  <script src="js/aos.js"></script>
+  <script src="js/main.js"></script>
+
+  <!-- Resource Filter Script -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const filterBtns = document.querySelectorAll('.filter-btn');
+      const resourceItems = document.querySelectorAll('.resource-item');
+
+      filterBtns.forEach(btn => {
+        btn.addEventListener('click', function() {
+          // Update active button
+          filterBtns.forEach(b => b.classList.remove('active'));
+          this.classList.add('active');
+
+          // Filter items
+          const filter = this.getAttribute('data-filter');
+          resourceItems.forEach(item => {
+            if (filter === 'all' || item.getAttribute('data-category') === filter) {
+              item.style.display = 'block';
+            } else {
+              item.style.display = 'none';
+            }
+          });
+        });
+      });
+    });
+  </script>
 
 </body>
 
